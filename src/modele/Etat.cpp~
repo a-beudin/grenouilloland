@@ -1,0 +1,4 @@
+#include "Etat.hh"
+
+Etat::Etat(const Enum& e) : etat(e)
+{}

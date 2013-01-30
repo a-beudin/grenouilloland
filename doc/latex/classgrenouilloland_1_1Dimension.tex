@@ -1,0 +1,142 @@
+\hypertarget{classgrenouilloland_1_1Dimension}{\section{Référence de la classe grenouilloland\-:\-:Dimension}
+\label{classgrenouilloland_1_1Dimension}\index{grenouilloland\-::\-Dimension@{grenouilloland\-::\-Dimension}}
+}
+
+
+Controleur de la dimension du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu}.  
+
+
+
+
+{\ttfamily \#include $<$Dimension.\-hh$>$}
+
+
+
+Graphe d'héritage de grenouilloland\-:\-:Dimension\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classgrenouilloland_1_1Dimension__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de grenouilloland\-:\-:Dimension\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgrenouilloland_1_1Dimension__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgrenouilloland_1_1Dimension_ac90aede2a2de82759014e3ff8f4eed6f}{Dimension} (const Glib\-::ustring \&titre, \hyperlink{classgrenouilloland_1_1Vue}{Vue} \&vue)
+\item 
+const \hyperlink{classgrenouilloland_1_1Vue}{Vue} \& \hyperlink{classgrenouilloland_1_1Dimension_a7daf1ff22e3c4d1085c35ff7b333760b}{lire\-Vue} () const 
+\item 
+int \hyperlink{classgrenouilloland_1_1Dimension_a3d82e721e31be8656926fc157f38ea1c}{valeur} () const 
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgrenouilloland_1_1Dimension_a7415e793d4ea98afe30864e81e00e48b}{cb\-Changement\-De\-Valeur} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgrenouilloland_1_1Vue}{Vue} $\ast$const \hyperlink{classgrenouilloland_1_1Dimension_a5b66fbce9d7f6eed85d39f90bb71d7c7}{\-\_\-ptr\-Vue}
+\item 
+Gtk\-::\-Combo\-Box\-Text \hyperlink{classgrenouilloland_1_1Dimension_aea2f6714737f26588395db30cb0385bd}{\-\_\-liste\-Dimension}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Controleur de la dimension du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu}. 
+
+\begin{DoxyAuthor}{Auteur}
+Yann Dauxais 
+
+Alexandre Beudin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+6.\-1.\-2013
+\end{DoxyDate}
+Declaration de la classe \hyperlink{classgrenouilloland_1_1Dimension}{Dimension} representant le controleur de dimension du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu}. Le Widget utilisé est un menu déroulant.
+
+\begin{DoxyNote}{Note}
+une instance de cette classe ne peut etre dupliquee.
+
+chaque instance de cette classe est son propre listener. 
+\end{DoxyNote}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{classgrenouilloland_1_1Dimension_ac90aede2a2de82759014e3ff8f4eed6f}{\index{grenouilloland\-::\-Dimension@{grenouilloland\-::\-Dimension}!Dimension@{Dimension}}
+\index{Dimension@{Dimension}!grenouilloland::Dimension@{grenouilloland\-::\-Dimension}}
+\subsubsection[{Dimension}]{\setlength{\rightskip}{0pt plus 5cm}Dimension\-::\-Dimension (
+\begin{DoxyParamCaption}
+\item[{const Glib\-::ustring \&}]{titre, }
+\item[{{\bf Vue} \&}]{vue}
+\end{DoxyParamCaption}
+)}}\label{classgrenouilloland_1_1Dimension_ac90aede2a2de82759014e3ff8f4eed6f}
+Constructeur logique.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em titre} & -\/ le titre du contour. \\
+\hline
+\mbox{\tt in,out}  & {\em vue} & -\/ la valeur de \hyperlink{classgrenouilloland_1_1Dimension_a5b66fbce9d7f6eed85d39f90bb71d7c7}{\-\_\-ptr\-Vue}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classgrenouilloland_1_1Dimension_a7415e793d4ea98afe30864e81e00e48b}{\index{grenouilloland\-::\-Dimension@{grenouilloland\-::\-Dimension}!cb\-Changement\-De\-Valeur@{cb\-Changement\-De\-Valeur}}
+\index{cb\-Changement\-De\-Valeur@{cb\-Changement\-De\-Valeur}!grenouilloland::Dimension@{grenouilloland\-::\-Dimension}}
+\subsubsection[{cb\-Changement\-De\-Valeur}]{\setlength{\rightskip}{0pt plus 5cm}void Dimension\-::cb\-Changement\-De\-Valeur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Dimension_a7415e793d4ea98afe30864e81e00e48b}
+Callback associe au changement de valeur. \hypertarget{classgrenouilloland_1_1Dimension_a7daf1ff22e3c4d1085c35ff7b333760b}{\index{grenouilloland\-::\-Dimension@{grenouilloland\-::\-Dimension}!lire\-Vue@{lire\-Vue}}
+\index{lire\-Vue@{lire\-Vue}!grenouilloland::Dimension@{grenouilloland\-::\-Dimension}}
+\subsubsection[{lire\-Vue}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vue} \& Dimension\-::lire\-Vue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1Dimension_a7daf1ff22e3c4d1085c35ff7b333760b}
+Accesseur.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de \hyperlink{classgrenouilloland_1_1Dimension_a5b66fbce9d7f6eed85d39f90bb71d7c7}{\-\_\-ptr\-Vue}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Dimension_a3d82e721e31be8656926fc157f38ea1c}{\index{grenouilloland\-::\-Dimension@{grenouilloland\-::\-Dimension}!valeur@{valeur}}
+\index{valeur@{valeur}!grenouilloland::Dimension@{grenouilloland\-::\-Dimension}}
+\subsubsection[{valeur}]{\setlength{\rightskip}{0pt plus 5cm}int Dimension\-::valeur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1Dimension_a3d82e721e31be8656926fc157f38ea1c}
+Retourne la dimension actuelle.
+
+\begin{DoxyReturn}{Renvoie}
+la dimension actuelle. 
+\end{DoxyReturn}
+
+
+\subsection{Documentation des données membres}
+\hypertarget{classgrenouilloland_1_1Dimension_aea2f6714737f26588395db30cb0385bd}{\index{grenouilloland\-::\-Dimension@{grenouilloland\-::\-Dimension}!\-\_\-liste\-Dimension@{\-\_\-liste\-Dimension}}
+\index{\-\_\-liste\-Dimension@{\-\_\-liste\-Dimension}!grenouilloland::Dimension@{grenouilloland\-::\-Dimension}}
+\subsubsection[{\-\_\-liste\-Dimension}]{\setlength{\rightskip}{0pt plus 5cm}Gtk\-::\-Combo\-Box\-Text grenouilloland\-::\-Dimension\-::\-\_\-liste\-Dimension\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Dimension_aea2f6714737f26588395db30cb0385bd}
+Menu déroulant. \hypertarget{classgrenouilloland_1_1Dimension_a5b66fbce9d7f6eed85d39f90bb71d7c7}{\index{grenouilloland\-::\-Dimension@{grenouilloland\-::\-Dimension}!\-\_\-ptr\-Vue@{\-\_\-ptr\-Vue}}
+\index{\-\_\-ptr\-Vue@{\-\_\-ptr\-Vue}!grenouilloland::Dimension@{grenouilloland\-::\-Dimension}}
+\subsubsection[{\-\_\-ptr\-Vue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vue}$\ast$ const grenouilloland\-::\-Dimension\-::\-\_\-ptr\-Vue\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Dimension_a5b66fbce9d7f6eed85d39f90bb71d7c7}
+Unique vue proprietaire de ce controleur. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+src/vue/include/Dimension.\-hh\item 
+src/vue/Dimension.\-cpp\end{DoxyCompactItemize}

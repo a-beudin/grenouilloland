@@ -1,0 +1,171 @@
+\hypertarget{classgrenouilloland_1_1GrenouillolandGraphique}{\section{Référence de la classe grenouilloland\-:\-:Grenouilloland\-Graphique}
+\label{classgrenouilloland_1_1GrenouillolandGraphique}\index{grenouilloland\-::\-Grenouilloland\-Graphique@{grenouilloland\-::\-Grenouilloland\-Graphique}}
+}
+
+
+Representation graphique du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu} grenouilloland.  
+
+
+
+
+{\ttfamily \#include $<$Grenouilloland\-Graphique.\-hh$>$}
+
+
+
+Graphe d'héritage de grenouilloland\-:\-:Grenouilloland\-Graphique\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classgrenouilloland_1_1GrenouillolandGraphique__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de grenouilloland\-:\-:Grenouilloland\-Graphique\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgrenouilloland_1_1GrenouillolandGraphique__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgrenouilloland_1_1GrenouillolandGraphique_a97d352b5fdf2875f4d86d68c86579547}{Grenouilloland\-Graphique} (const Glib\-::ustring \&titre, \hyperlink{classgrenouilloland_1_1Vue}{Vue} \&vue)
+\item 
+const \hyperlink{classgrenouilloland_1_1Vue}{Vue} \& \hyperlink{classgrenouilloland_1_1GrenouillolandGraphique_a7b19495a473e950ed6ff6e9b3d307abc}{lire\-Vue} () const 
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgrenouilloland_1_1Vue}{Vue} \& \hyperlink{classgrenouilloland_1_1GrenouillolandGraphique_a077a9aa314172f04d4fecee498c5a37a}{lire\-Vue\-Modifiable} ()
+\item 
+void \hyperlink{classgrenouilloland_1_1GrenouillolandGraphique_a456350eac30419edfab5a9e37d49da1b}{mettre\-A\-Jour} (const \hyperlink{classgrenouilloland_1_1Presentateur}{Presentateur} \&presentateur)
+\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgrenouilloland_1_1Vue}{Vue} $\ast$const \hyperlink{classgrenouilloland_1_1GrenouillolandGraphique_aa0fe0c7d9e9cd676b8ce62a40ab97c62}{\-\_\-ptr\-Vue}
+\item 
+Gtk\-::\-Grid \hyperlink{classgrenouilloland_1_1GrenouillolandGraphique_a71036819a9bba19e6ecee48cf7acc00b}{\-\_\-gestionnaire}
+\item 
+std\-::vector$<$ \hyperlink{classgrenouilloland_1_1CaseGraphique}{Case\-Graphique} $\ast$ $>$ \hyperlink{classgrenouilloland_1_1GrenouillolandGraphique_ab4d1dbe72f42279511f2ccbd171bbffe}{\-\_\-cases}
+\end{DoxyCompactItemize}
+\subsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgrenouilloland_1_1GrenouillolandGraphique_adc3b1810b8d3988a7832f57c330fe4fd}{Vue}
+\item 
+class \hyperlink{classgrenouilloland_1_1GrenouillolandGraphique_ac12b0ba9ebe667c8408ac35bf21598e8}{Case\-Graphique}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Representation graphique du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu} grenouilloland. 
+
+\begin{DoxyAuthor}{Auteur}
+Yann Dauxais 
+
+Alexandre Beudin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+6.\-1.\-2013
+\end{DoxyDate}
+Declaration de la classe \hyperlink{classgrenouilloland_1_1GrenouillolandGraphique}{Grenouilloland\-Graphique} representant le plateau du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu} Grenouilloland.
+
+\begin{DoxyNote}{Note}
+Une instance de cette classe ne peut être dupliquée. 
+\end{DoxyNote}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{classgrenouilloland_1_1GrenouillolandGraphique_a97d352b5fdf2875f4d86d68c86579547}{\index{grenouilloland\-::\-Grenouilloland\-Graphique@{grenouilloland\-::\-Grenouilloland\-Graphique}!Grenouilloland\-Graphique@{Grenouilloland\-Graphique}}
+\index{Grenouilloland\-Graphique@{Grenouilloland\-Graphique}!grenouilloland::GrenouillolandGraphique@{grenouilloland\-::\-Grenouilloland\-Graphique}}
+\subsubsection[{Grenouilloland\-Graphique}]{\setlength{\rightskip}{0pt plus 5cm}Grenouilloland\-Graphique\-::\-Grenouilloland\-Graphique (
+\begin{DoxyParamCaption}
+\item[{const Glib\-::ustring \&}]{titre, }
+\item[{{\bf Vue} \&}]{vue}
+\end{DoxyParamCaption}
+)}}\label{classgrenouilloland_1_1GrenouillolandGraphique_a97d352b5fdf2875f4d86d68c86579547}
+Constructeur logique.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em titre} & -\/ le titre du contour. \\
+\hline
+\mbox{\tt in,out}  & {\em vue} & -\/ la valeur de \hyperlink{classgrenouilloland_1_1GrenouillolandGraphique_aa0fe0c7d9e9cd676b8ce62a40ab97c62}{\-\_\-ptr\-Vue}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classgrenouilloland_1_1GrenouillolandGraphique_a7b19495a473e950ed6ff6e9b3d307abc}{\index{grenouilloland\-::\-Grenouilloland\-Graphique@{grenouilloland\-::\-Grenouilloland\-Graphique}!lire\-Vue@{lire\-Vue}}
+\index{lire\-Vue@{lire\-Vue}!grenouilloland::GrenouillolandGraphique@{grenouilloland\-::\-Grenouilloland\-Graphique}}
+\subsubsection[{lire\-Vue}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vue} \& Grenouilloland\-Graphique\-::lire\-Vue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1GrenouillolandGraphique_a7b19495a473e950ed6ff6e9b3d307abc}
+Accesseur.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de \hyperlink{classgrenouilloland_1_1GrenouillolandGraphique_aa0fe0c7d9e9cd676b8ce62a40ab97c62}{\-\_\-ptr\-Vue}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1GrenouillolandGraphique_a077a9aa314172f04d4fecee498c5a37a}{\index{grenouilloland\-::\-Grenouilloland\-Graphique@{grenouilloland\-::\-Grenouilloland\-Graphique}!lire\-Vue\-Modifiable@{lire\-Vue\-Modifiable}}
+\index{lire\-Vue\-Modifiable@{lire\-Vue\-Modifiable}!grenouilloland::GrenouillolandGraphique@{grenouilloland\-::\-Grenouilloland\-Graphique}}
+\subsubsection[{lire\-Vue\-Modifiable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vue} \& Grenouilloland\-Graphique\-::lire\-Vue\-Modifiable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1GrenouillolandGraphique_a077a9aa314172f04d4fecee498c5a37a}
+Accesseur.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de \hyperlink{classgrenouilloland_1_1GrenouillolandGraphique_aa0fe0c7d9e9cd676b8ce62a40ab97c62}{\-\_\-ptr\-Vue}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1GrenouillolandGraphique_a456350eac30419edfab5a9e37d49da1b}{\index{grenouilloland\-::\-Grenouilloland\-Graphique@{grenouilloland\-::\-Grenouilloland\-Graphique}!mettre\-A\-Jour@{mettre\-A\-Jour}}
+\index{mettre\-A\-Jour@{mettre\-A\-Jour}!grenouilloland::GrenouillolandGraphique@{grenouilloland\-::\-Grenouilloland\-Graphique}}
+\subsubsection[{mettre\-A\-Jour}]{\setlength{\rightskip}{0pt plus 5cm}void Grenouilloland\-Graphique\-::mettre\-A\-Jour (
+\begin{DoxyParamCaption}
+\item[{const {\bf Presentateur} \&}]{presentateur}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1GrenouillolandGraphique_a456350eac30419edfab5a9e37d49da1b}
+Met a jour l'ensemble des cases graphiques de ce jeu graphique.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em presentateur} & -\/ le presentateur a invoquer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+La vue doit etre verrouillee pour pouvoir invoquer cette methode. 
+\end{DoxyNote}
+
+
+\subsection{Documentation des fonctions amies et associées}
+\hypertarget{classgrenouilloland_1_1GrenouillolandGraphique_ac12b0ba9ebe667c8408ac35bf21598e8}{\index{grenouilloland\-::\-Grenouilloland\-Graphique@{grenouilloland\-::\-Grenouilloland\-Graphique}!Case\-Graphique@{Case\-Graphique}}
+\index{Case\-Graphique@{Case\-Graphique}!grenouilloland::GrenouillolandGraphique@{grenouilloland\-::\-Grenouilloland\-Graphique}}
+\subsubsection[{Case\-Graphique}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Case\-Graphique}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classgrenouilloland_1_1GrenouillolandGraphique_ac12b0ba9ebe667c8408ac35bf21598e8}
+Declaration d'amitié. \hypertarget{classgrenouilloland_1_1GrenouillolandGraphique_adc3b1810b8d3988a7832f57c330fe4fd}{\index{grenouilloland\-::\-Grenouilloland\-Graphique@{grenouilloland\-::\-Grenouilloland\-Graphique}!Vue@{Vue}}
+\index{Vue@{Vue}!grenouilloland::GrenouillolandGraphique@{grenouilloland\-::\-Grenouilloland\-Graphique}}
+\subsubsection[{Vue}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Vue}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classgrenouilloland_1_1GrenouillolandGraphique_adc3b1810b8d3988a7832f57c330fe4fd}
+Declaration d'amitié. 
+
+\subsection{Documentation des données membres}
+\hypertarget{classgrenouilloland_1_1GrenouillolandGraphique_ab4d1dbe72f42279511f2ccbd171bbffe}{\index{grenouilloland\-::\-Grenouilloland\-Graphique@{grenouilloland\-::\-Grenouilloland\-Graphique}!\-\_\-cases@{\-\_\-cases}}
+\index{\-\_\-cases@{\-\_\-cases}!grenouilloland::GrenouillolandGraphique@{grenouilloland\-::\-Grenouilloland\-Graphique}}
+\subsubsection[{\-\_\-cases}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ {\bf Case\-Graphique}$\ast$ $>$ grenouilloland\-::\-Grenouilloland\-Graphique\-::\-\_\-cases\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1GrenouillolandGraphique_ab4d1dbe72f42279511f2ccbd171bbffe}
+Cases graphiques de cette representation graphique du jeu grenouilloland. \hypertarget{classgrenouilloland_1_1GrenouillolandGraphique_a71036819a9bba19e6ecee48cf7acc00b}{\index{grenouilloland\-::\-Grenouilloland\-Graphique@{grenouilloland\-::\-Grenouilloland\-Graphique}!\-\_\-gestionnaire@{\-\_\-gestionnaire}}
+\index{\-\_\-gestionnaire@{\-\_\-gestionnaire}!grenouilloland::GrenouillolandGraphique@{grenouilloland\-::\-Grenouilloland\-Graphique}}
+\subsubsection[{\-\_\-gestionnaire}]{\setlength{\rightskip}{0pt plus 5cm}Gtk\-::\-Grid grenouilloland\-::\-Grenouilloland\-Graphique\-::\-\_\-gestionnaire\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1GrenouillolandGraphique_a71036819a9bba19e6ecee48cf7acc00b}
+Gestionnaire de mise en forme de ce plateau. \hypertarget{classgrenouilloland_1_1GrenouillolandGraphique_aa0fe0c7d9e9cd676b8ce62a40ab97c62}{\index{grenouilloland\-::\-Grenouilloland\-Graphique@{grenouilloland\-::\-Grenouilloland\-Graphique}!\-\_\-ptr\-Vue@{\-\_\-ptr\-Vue}}
+\index{\-\_\-ptr\-Vue@{\-\_\-ptr\-Vue}!grenouilloland::GrenouillolandGraphique@{grenouilloland\-::\-Grenouilloland\-Graphique}}
+\subsubsection[{\-\_\-ptr\-Vue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vue}$\ast$ const grenouilloland\-::\-Grenouilloland\-Graphique\-::\-\_\-ptr\-Vue\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1GrenouillolandGraphique_aa0fe0c7d9e9cd676b8ce62a40ab97c62}
+Unique vue proprietaire de cette generation. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+src/vue/include/Grenouilloland\-Graphique.\-hh\item 
+src/vue/Grenouilloland\-Graphique.\-cpp\end{DoxyCompactItemize}

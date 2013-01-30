@@ -1,0 +1,169 @@
+\hypertarget{classgrenouilloland_1_1Case}{\section{Référence de la classe grenouilloland\-:\-:Case}
+\label{classgrenouilloland_1_1Case}\index{grenouilloland\-::\-Case@{grenouilloland\-::\-Case}}
+}
+
+
+\hyperlink{classgrenouilloland_1_1Case}{Case} du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu} Grenouilloland.  
+
+
+
+
+{\ttfamily \#include $<$Case.\-hh$>$}
+
+
+
+Graphe de collaboration de grenouilloland\-:\-:Case\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{classgrenouilloland_1_1Case__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgrenouilloland_1_1Case_a70869d260d32a037b2f72b56990abc42}{Case} (const int \&colonne, const int \&ligne)
+\item 
+const int \& \hyperlink{classgrenouilloland_1_1Case_aedf4adbcb065ba1f3d178dccd0a54679}{lire\-Ligne} () const 
+\item 
+const int \& \hyperlink{classgrenouilloland_1_1Case_a58ddf443efa9e649e9a9e61b019ec3b8}{lire\-Colonne} () const 
+\item 
+const \hyperlink{classgrenouilloland_1_1Element}{Element} \& \hyperlink{classgrenouilloland_1_1Case_a823dafb736c38d71b6a3192cd6a3d0fd}{lire\-Element} () const 
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgrenouilloland_1_1Case_ab57246e24672017b0cb29484ca6d2921}{changer\-Element} (\hyperlink{classgrenouilloland_1_1Element}{Element} $\ast$element)
+\item 
+\hyperlink{classgrenouilloland_1_1Etat}{Etat} \hyperlink{classgrenouilloland_1_1Case_a9e746c0dba7c7bcf166ca88bb10d9b01}{vieillir\-Element} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classgrenouilloland_1_1Case_a852142435ab4a556c148274cccbcfebc}{\-\_\-ligne}
+\item 
+int \hyperlink{classgrenouilloland_1_1Case_a44c61a8ab51a6fedb92c9a92c7eeb9eb}{\-\_\-colonne}
+\item 
+std\-::unique\-\_\-ptr$<$ \hyperlink{classgrenouilloland_1_1Element}{Element} $>$ \hyperlink{classgrenouilloland_1_1Case_a3ffd88341a2aee34d145ddf5a986ab37}{\-\_\-element}
+\end{DoxyCompactItemize}
+\subsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgrenouilloland_1_1Case_a8347c819d94b3816d06cf9255691923d}{class {\bfseries Jeu}}\label{classgrenouilloland_1_1Case_a8347c819d94b3816d06cf9255691923d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+\hyperlink{classgrenouilloland_1_1Case}{Case} du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu} Grenouilloland. 
+
+\begin{DoxyAuthor}{Auteur}
+Beudin Alexandre -\/ Dauxais Yann 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+05.\-01.\-2012
+\end{DoxyDate}
+Declaration de la classe \hyperlink{classgrenouilloland_1_1Case}{Case} representant une \hyperlink{classgrenouilloland_1_1Case}{Case} du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu} Grenouilloland. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{classgrenouilloland_1_1Case_a70869d260d32a037b2f72b56990abc42}{\index{grenouilloland\-::\-Case@{grenouilloland\-::\-Case}!Case@{Case}}
+\index{Case@{Case}!grenouilloland::Case@{grenouilloland\-::\-Case}}
+\subsubsection[{Case}]{\setlength{\rightskip}{0pt plus 5cm}Case\-::\-Case (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{colonne, }
+\item[{const int \&}]{ligne}
+\end{DoxyParamCaption}
+)}}\label{classgrenouilloland_1_1Case_a70869d260d32a037b2f72b56990abc42}
+Constructeur logique instanciant une case.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em colonne} & -\/ la valeur de \hyperlink{classgrenouilloland_1_1Case_a44c61a8ab51a6fedb92c9a92c7eeb9eb}{\-\_\-colonne}. \\
+\hline
+\mbox{\tt in}  & {\em ligne} & -\/ la valeur de \hyperlink{classgrenouilloland_1_1Case_a852142435ab4a556c148274cccbcfebc}{\-\_\-ligne}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classgrenouilloland_1_1Case_ab57246e24672017b0cb29484ca6d2921}{\index{grenouilloland\-::\-Case@{grenouilloland\-::\-Case}!changer\-Element@{changer\-Element}}
+\index{changer\-Element@{changer\-Element}!grenouilloland::Case@{grenouilloland\-::\-Case}}
+\subsubsection[{changer\-Element}]{\setlength{\rightskip}{0pt plus 5cm}void Case\-::changer\-Element (
+\begin{DoxyParamCaption}
+\item[{{\bf Element} $\ast$}]{element}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Case_ab57246e24672017b0cb29484ca6d2921}
+Remplace l'élement présent par celui en paramètre.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in,out}  & {\em element} & -\/ nouvel élément de la cellule. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgrenouilloland_1_1Case_a58ddf443efa9e649e9a9e61b019ec3b8}{\index{grenouilloland\-::\-Case@{grenouilloland\-::\-Case}!lire\-Colonne@{lire\-Colonne}}
+\index{lire\-Colonne@{lire\-Colonne}!grenouilloland::Case@{grenouilloland\-::\-Case}}
+\subsubsection[{lire\-Colonne}]{\setlength{\rightskip}{0pt plus 5cm}const int \& Case\-::lire\-Colonne (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1Case_a58ddf443efa9e649e9a9e61b019ec3b8}
+Accesseur du numéro de colonne.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de \hyperlink{classgrenouilloland_1_1Case_a44c61a8ab51a6fedb92c9a92c7eeb9eb}{\-\_\-colonne}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Case_a823dafb736c38d71b6a3192cd6a3d0fd}{\index{grenouilloland\-::\-Case@{grenouilloland\-::\-Case}!lire\-Element@{lire\-Element}}
+\index{lire\-Element@{lire\-Element}!grenouilloland::Case@{grenouilloland\-::\-Case}}
+\subsubsection[{lire\-Element}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Element} \& Case\-::lire\-Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1Case_a823dafb736c38d71b6a3192cd6a3d0fd}
+Accesseur de l'élément.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de l'élément pointé par \hyperlink{classgrenouilloland_1_1Case_a3ffd88341a2aee34d145ddf5a986ab37}{\-\_\-element}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Case_aedf4adbcb065ba1f3d178dccd0a54679}{\index{grenouilloland\-::\-Case@{grenouilloland\-::\-Case}!lire\-Ligne@{lire\-Ligne}}
+\index{lire\-Ligne@{lire\-Ligne}!grenouilloland::Case@{grenouilloland\-::\-Case}}
+\subsubsection[{lire\-Ligne}]{\setlength{\rightskip}{0pt plus 5cm}const int \& Case\-::lire\-Ligne (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1Case_aedf4adbcb065ba1f3d178dccd0a54679}
+Accesseur du numéro de ligne.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de \hyperlink{classgrenouilloland_1_1Case_a852142435ab4a556c148274cccbcfebc}{\-\_\-ligne}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Case_a9e746c0dba7c7bcf166ca88bb10d9b01}{\index{grenouilloland\-::\-Case@{grenouilloland\-::\-Case}!vieillir\-Element@{vieillir\-Element}}
+\index{vieillir\-Element@{vieillir\-Element}!grenouilloland::Case@{grenouilloland\-::\-Case}}
+\subsubsection[{vieillir\-Element}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Etat} Case\-::vieillir\-Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Case_a9e746c0dba7c7bcf166ca88bb10d9b01}
+Vieillisement de l'élément.
+
+\begin{DoxyReturn}{Renvoie}
+nouvel état de l'élément pointé par \hyperlink{classgrenouilloland_1_1Case_a3ffd88341a2aee34d145ddf5a986ab37}{\-\_\-element}. 
+\end{DoxyReturn}
+
+
+\subsection{Documentation des données membres}
+\hypertarget{classgrenouilloland_1_1Case_a44c61a8ab51a6fedb92c9a92c7eeb9eb}{\index{grenouilloland\-::\-Case@{grenouilloland\-::\-Case}!\-\_\-colonne@{\-\_\-colonne}}
+\index{\-\_\-colonne@{\-\_\-colonne}!grenouilloland::Case@{grenouilloland\-::\-Case}}
+\subsubsection[{\-\_\-colonne}]{\setlength{\rightskip}{0pt plus 5cm}int grenouilloland\-::\-Case\-::\-\_\-colonne\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Case_a44c61a8ab51a6fedb92c9a92c7eeb9eb}
+Numero de colonne de cette cellule. \hypertarget{classgrenouilloland_1_1Case_a3ffd88341a2aee34d145ddf5a986ab37}{\index{grenouilloland\-::\-Case@{grenouilloland\-::\-Case}!\-\_\-element@{\-\_\-element}}
+\index{\-\_\-element@{\-\_\-element}!grenouilloland::Case@{grenouilloland\-::\-Case}}
+\subsubsection[{\-\_\-element}]{\setlength{\rightskip}{0pt plus 5cm}std\-::unique\-\_\-ptr$<${\bf Element}$>$ grenouilloland\-::\-Case\-::\-\_\-element\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Case_a3ffd88341a2aee34d145ddf5a986ab37}
+\hyperlink{classgrenouilloland_1_1Element}{Element} contenu dans la cellule. \hypertarget{classgrenouilloland_1_1Case_a852142435ab4a556c148274cccbcfebc}{\index{grenouilloland\-::\-Case@{grenouilloland\-::\-Case}!\-\_\-ligne@{\-\_\-ligne}}
+\index{\-\_\-ligne@{\-\_\-ligne}!grenouilloland::Case@{grenouilloland\-::\-Case}}
+\subsubsection[{\-\_\-ligne}]{\setlength{\rightskip}{0pt plus 5cm}int grenouilloland\-::\-Case\-::\-\_\-ligne\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Case_a852142435ab4a556c148274cccbcfebc}
+Numero de ligne de cette cellule. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+src/modele/include/Case.\-hh\item 
+src/modele/Case.\-cpp\end{DoxyCompactItemize}

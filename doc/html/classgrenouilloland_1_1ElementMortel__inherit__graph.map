@@ -1,0 +1,8 @@
+<map id="grenouilloland::ElementMortel" name="grenouilloland::ElementMortel">
+<area shape="rect" id="node5" href="$classgrenouilloland_1_1Nenuphar.html" title="Nenuphar du Jeu Grenouilloland." alt="" coords="453,5,619,35"/>
+<area shape="rect" id="node7" href="$classgrenouilloland_1_1NenupharDopant.html" title="NenupharDopant du Jeu Grenouilloland." alt="" coords="453,58,619,105"/>
+<area shape="rect" id="node9" href="$classgrenouilloland_1_1NenupharMortel.html" title="NenupharMortel du Jeu Grenouilloland." alt="" coords="453,127,619,174"/>
+<area shape="rect" id="node11" href="$classgrenouilloland_1_1NenupharNutritif.html" title="NenupharNutritif du Jeu Grenouilloland." alt="" coords="453,197,619,243"/>
+<area shape="rect" id="node13" href="$classgrenouilloland_1_1NenupharVeneneux.html" title="NenupharVeneneux du Jeu Grenouilloland." alt="" coords="453,266,619,313"/>
+<area shape="rect" id="node2" href="$classgrenouilloland_1_1Element.html" title="Element du Jeu Grenouilloland." alt="" coords="5,136,163,165"/>
+</map>

@@ -1,0 +1,105 @@
+\hypertarget{classgrenouilloland_1_1ElementMortel}{\section{Référence de la classe grenouilloland\-:\-:Element\-Mortel}
+\label{classgrenouilloland_1_1ElementMortel}\index{grenouilloland\-::\-Element\-Mortel@{grenouilloland\-::\-Element\-Mortel}}
+}
+
+
+\hyperlink{classgrenouilloland_1_1ElementMortel}{Element\-Mortel} du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu} Grenouilloland.  
+
+
+
+
+{\ttfamily \#include $<$Element\-Mortel.\-hh$>$}
+
+
+
+Graphe d'héritage de grenouilloland\-:\-:Element\-Mortel\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgrenouilloland_1_1ElementMortel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de grenouilloland\-:\-:Element\-Mortel\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classgrenouilloland_1_1ElementMortel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classgrenouilloland_1_1ElementMortel_af3b98e89d6adca1cb01d148d9fb4da02}{$\sim$\-Element\-Mortel} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgrenouilloland_1_1ElementMortel_afcc0659282b7c248c5546f4169a5165f}{Element\-Mortel} (const \hyperlink{classgrenouilloland_1_1StrategieAbstraite}{Strategie\-Abstraite} \&strategie)
+\item 
+\hyperlink{classgrenouilloland_1_1Etat}{Etat} \hyperlink{classgrenouilloland_1_1ElementMortel_a300a32cce88feb6a2bfc92c1165f9c61}{vieillir} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Description détaillée}
+\hyperlink{classgrenouilloland_1_1ElementMortel}{Element\-Mortel} du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu} Grenouilloland. 
+
+\begin{DoxyAuthor}{Auteur}
+Beudin.\-Alexandre Dauxais.\-Yann 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+05.\-01.\-2012
+\end{DoxyDate}
+Declaration de la classe abstraite \hyperlink{classgrenouilloland_1_1ElementMortel}{Element\-Mortel} réprésentant la structure d'un élément ayant plusieurs états de vieillissement du jeu Grenouilloland. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{classgrenouilloland_1_1ElementMortel_af3b98e89d6adca1cb01d148d9fb4da02}{\index{grenouilloland\-::\-Element\-Mortel@{grenouilloland\-::\-Element\-Mortel}!$\sim$\-Element\-Mortel@{$\sim$\-Element\-Mortel}}
+\index{$\sim$\-Element\-Mortel@{$\sim$\-Element\-Mortel}!grenouilloland::ElementMortel@{grenouilloland\-::\-Element\-Mortel}}
+\subsubsection[{$\sim$\-Element\-Mortel}]{\setlength{\rightskip}{0pt plus 5cm}Element\-Mortel\-::$\sim$\-Element\-Mortel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classgrenouilloland_1_1ElementMortel_af3b98e89d6adca1cb01d148d9fb4da02}
+Destructeur d'un élément mortel. \hypertarget{classgrenouilloland_1_1ElementMortel_afcc0659282b7c248c5546f4169a5165f}{\index{grenouilloland\-::\-Element\-Mortel@{grenouilloland\-::\-Element\-Mortel}!Element\-Mortel@{Element\-Mortel}}
+\index{Element\-Mortel@{Element\-Mortel}!grenouilloland::ElementMortel@{grenouilloland\-::\-Element\-Mortel}}
+\subsubsection[{Element\-Mortel}]{\setlength{\rightskip}{0pt plus 5cm}Element\-Mortel\-::\-Element\-Mortel (
+\begin{DoxyParamCaption}
+\item[{const {\bf Strategie\-Abstraite} \&}]{strategie}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1ElementMortel_afcc0659282b7c248c5546f4169a5165f}
+Constructeur logique d'un élément mortel.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em strategie} & -\/ stratégie de l'élément mortel. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classgrenouilloland_1_1ElementMortel_a300a32cce88feb6a2bfc92c1165f9c61}{\index{grenouilloland\-::\-Element\-Mortel@{grenouilloland\-::\-Element\-Mortel}!vieillir@{vieillir}}
+\index{vieillir@{vieillir}!grenouilloland::ElementMortel@{grenouilloland\-::\-Element\-Mortel}}
+\subsubsection[{vieillir}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Etat} Element\-Mortel\-::vieillir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classgrenouilloland_1_1ElementMortel_a300a32cce88feb6a2bfc92c1165f9c61}
+Vieillissement de l'élément mortel.
+
+\begin{DoxyReturn}{Renvoie}
+l'état de l'élément mortel. 
+\end{DoxyReturn}
+
+
+Réimplémentée à partir de \hyperlink{classgrenouilloland_1_1Element}{grenouilloland\-::\-Element}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+src/modele/include/Element\-Mortel.\-hh\item 
+src/modele/Element\-Mortel.\-cpp\end{DoxyCompactItemize}

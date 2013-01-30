@@ -1,0 +1,215 @@
+\hypertarget{classgrenouilloland_1_1CaseGraphique}{\section{Référence de la classe grenouilloland\-:\-:Case\-Graphique}
+\label{classgrenouilloland_1_1CaseGraphique}\index{grenouilloland\-::\-Case\-Graphique@{grenouilloland\-::\-Case\-Graphique}}
+}
+
+
+Representation graphique d'une \hyperlink{classgrenouilloland_1_1Case}{Case}.  
+
+
+
+
+{\ttfamily \#include $<$Case\-Graphique.\-hh$>$}
+
+
+
+Graphe d'héritage de grenouilloland\-:\-:Case\-Graphique\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classgrenouilloland_1_1CaseGraphique__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de grenouilloland\-:\-:Case\-Graphique\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgrenouilloland_1_1CaseGraphique__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgrenouilloland_1_1CaseGraphique_a05e456185c11de9239e27bff41c2d53e}{Case\-Graphique} (\hyperlink{classgrenouilloland_1_1GrenouillolandGraphique}{Grenouilloland\-Graphique} \&grenouilloland\-Graphique, const int \&colonne, const int \&ligne)
+\item 
+const \hyperlink{classgrenouilloland_1_1GrenouillolandGraphique}{Grenouilloland\-Graphique} \& \hyperlink{classgrenouilloland_1_1CaseGraphique_a10c9a3768da212d67598deda0609d98f}{lire\-Grenouilloland\-Graphique} () const 
+\item 
+const int \& \hyperlink{classgrenouilloland_1_1CaseGraphique_a0533ed9960cdd84cdc064888cc27d952}{lire\-Ligne} () const 
+\item 
+const int \& \hyperlink{classgrenouilloland_1_1CaseGraphique_a8f575954b15de168325c0869c66d6a87}{lire\-Colonne} () const 
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgrenouilloland_1_1CaseGraphique_a08a0e069b5572708c69beb22edc6da65}{mettre\-A\-Jour} (const \hyperlink{classgrenouilloland_1_1Presentateur}{Presentateur} \&presentateur)
+\item 
+bool \hyperlink{classgrenouilloland_1_1CaseGraphique_ab6f2daebfafae5076c4390ecbed5cbe1}{cb\-Click\-Souris} (Gdk\-Event\-Button $\ast$evt)
+\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgrenouilloland_1_1GrenouillolandGraphique}{Grenouilloland\-Graphique} $\ast$const \hyperlink{classgrenouilloland_1_1CaseGraphique_a0ef536735e07c4f90f32afa4b74928d3}{\-\_\-ptr\-Grenouilloland\-Graphique}
+\item 
+const int \hyperlink{classgrenouilloland_1_1CaseGraphique_a66f59a2fcbc16ffda0bd1e30471737f3}{\-\_\-ligne}
+\item 
+const int \hyperlink{classgrenouilloland_1_1CaseGraphique_ae4e49cd04cefb12a3b42e2e57678520a}{\-\_\-colonne}
+\item 
+std\-::map$<$ int, std\-::unique\-\_\-ptr\\*
+$<$ Gtk\-::\-Image $>$ $>$ \hyperlink{classgrenouilloland_1_1CaseGraphique_a020fe5a8b0c1e7d803c50ba268ec83d7}{\-\_\-etats}
+\end{DoxyCompactItemize}
+\subsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgrenouilloland_1_1CaseGraphique_afaa793860facc1cb19fbc6b54b38c4f8}{Grenouilloland\-Graphique}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Representation graphique d'une \hyperlink{classgrenouilloland_1_1Case}{Case}. 
+
+\begin{DoxyAuthor}{Auteur}
+Yann Dauxais 
+
+Alexandre Beudin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+6.\-1.\-2013
+\end{DoxyDate}
+Declaration de la classe \hyperlink{classgrenouilloland_1_1CaseGraphique}{Case\-Graphique} representant graphiquement une case du modele.
+
+\begin{DoxyNote}{Note}
+Une instance de cette classe ne peut être dupliquée. L'operateur d'affectation est naturellement et implicitement retire car deux des attributs de cette classe sont des constantes.
+
+Chaque instance de cette classe est son propre listener. 
+\end{DoxyNote}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{classgrenouilloland_1_1CaseGraphique_a05e456185c11de9239e27bff41c2d53e}{\index{grenouilloland\-::\-Case\-Graphique@{grenouilloland\-::\-Case\-Graphique}!Case\-Graphique@{Case\-Graphique}}
+\index{Case\-Graphique@{Case\-Graphique}!grenouilloland::CaseGraphique@{grenouilloland\-::\-Case\-Graphique}}
+\subsubsection[{Case\-Graphique}]{\setlength{\rightskip}{0pt plus 5cm}Case\-Graphique\-::\-Case\-Graphique (
+\begin{DoxyParamCaption}
+\item[{{\bf Grenouilloland\-Graphique} \&}]{grenouilloland\-Graphique, }
+\item[{const int \&}]{colonne, }
+\item[{const int \&}]{ligne}
+\end{DoxyParamCaption}
+)}}\label{classgrenouilloland_1_1CaseGraphique_a05e456185c11de9239e27bff41c2d53e}
+Constructeur logique.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in,out}  & {\em jeu} & -\/ la valeur de \hyperlink{classgrenouilloland_1_1CaseGraphique_a0ef536735e07c4f90f32afa4b74928d3}{\-\_\-ptr\-Grenouilloland\-Graphique}. \\
+\hline
+\mbox{\tt in}  & {\em ligne} & -\/ la valeur de \hyperlink{classgrenouilloland_1_1CaseGraphique_a66f59a2fcbc16ffda0bd1e30471737f3}{\-\_\-ligne}. \\
+\hline
+\mbox{\tt in}  & {\em colonne} & -\/ la valeur de \hyperlink{classgrenouilloland_1_1CaseGraphique_ae4e49cd04cefb12a3b42e2e57678520a}{\-\_\-colonne}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classgrenouilloland_1_1CaseGraphique_ab6f2daebfafae5076c4390ecbed5cbe1}{\index{grenouilloland\-::\-Case\-Graphique@{grenouilloland\-::\-Case\-Graphique}!cb\-Click\-Souris@{cb\-Click\-Souris}}
+\index{cb\-Click\-Souris@{cb\-Click\-Souris}!grenouilloland::CaseGraphique@{grenouilloland\-::\-Case\-Graphique}}
+\subsubsection[{cb\-Click\-Souris}]{\setlength{\rightskip}{0pt plus 5cm}bool Case\-Graphique\-::cb\-Click\-Souris (
+\begin{DoxyParamCaption}
+\item[{Gdk\-Event\-Button $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1CaseGraphique_ab6f2daebfafae5076c4390ecbed5cbe1}
+Callback invoque lors d'un click de souris sur cette case graphique.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em evt} & -\/ l'evenement associe au click. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+la valeur {\ttfamily true}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1CaseGraphique_a8f575954b15de168325c0869c66d6a87}{\index{grenouilloland\-::\-Case\-Graphique@{grenouilloland\-::\-Case\-Graphique}!lire\-Colonne@{lire\-Colonne}}
+\index{lire\-Colonne@{lire\-Colonne}!grenouilloland::CaseGraphique@{grenouilloland\-::\-Case\-Graphique}}
+\subsubsection[{lire\-Colonne}]{\setlength{\rightskip}{0pt plus 5cm}const int \& Case\-Graphique\-::lire\-Colonne (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1CaseGraphique_a8f575954b15de168325c0869c66d6a87}
+Accesseur.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de \hyperlink{classgrenouilloland_1_1CaseGraphique_ae4e49cd04cefb12a3b42e2e57678520a}{\-\_\-colonne}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1CaseGraphique_a10c9a3768da212d67598deda0609d98f}{\index{grenouilloland\-::\-Case\-Graphique@{grenouilloland\-::\-Case\-Graphique}!lire\-Grenouilloland\-Graphique@{lire\-Grenouilloland\-Graphique}}
+\index{lire\-Grenouilloland\-Graphique@{lire\-Grenouilloland\-Graphique}!grenouilloland::CaseGraphique@{grenouilloland\-::\-Case\-Graphique}}
+\subsubsection[{lire\-Grenouilloland\-Graphique}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Grenouilloland\-Graphique} \& Case\-Graphique\-::lire\-Grenouilloland\-Graphique (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1CaseGraphique_a10c9a3768da212d67598deda0609d98f}
+Accesseur.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de \hyperlink{classgrenouilloland_1_1CaseGraphique_a0ef536735e07c4f90f32afa4b74928d3}{\-\_\-ptr\-Grenouilloland\-Graphique}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1CaseGraphique_a0533ed9960cdd84cdc064888cc27d952}{\index{grenouilloland\-::\-Case\-Graphique@{grenouilloland\-::\-Case\-Graphique}!lire\-Ligne@{lire\-Ligne}}
+\index{lire\-Ligne@{lire\-Ligne}!grenouilloland::CaseGraphique@{grenouilloland\-::\-Case\-Graphique}}
+\subsubsection[{lire\-Ligne}]{\setlength{\rightskip}{0pt plus 5cm}const int \& Case\-Graphique\-::lire\-Ligne (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1CaseGraphique_a0533ed9960cdd84cdc064888cc27d952}
+Accesseur.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de \hyperlink{classgrenouilloland_1_1CaseGraphique_a66f59a2fcbc16ffda0bd1e30471737f3}{\-\_\-ligne}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1CaseGraphique_a08a0e069b5572708c69beb22edc6da65}{\index{grenouilloland\-::\-Case\-Graphique@{grenouilloland\-::\-Case\-Graphique}!mettre\-A\-Jour@{mettre\-A\-Jour}}
+\index{mettre\-A\-Jour@{mettre\-A\-Jour}!grenouilloland::CaseGraphique@{grenouilloland\-::\-Case\-Graphique}}
+\subsubsection[{mettre\-A\-Jour}]{\setlength{\rightskip}{0pt plus 5cm}void Case\-Graphique\-::mettre\-A\-Jour (
+\begin{DoxyParamCaption}
+\item[{const {\bf Presentateur} \&}]{presentateur}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1CaseGraphique_a08a0e069b5572708c69beb22edc6da65}
+Demande a cette case graphique de se mettre a jour en fonction de l'etat de la case correspondante du modele.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em presentateur} & -\/ le presentateur a invoquer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+La vue doit etre verrouille pour pouvoir invoquer cette methode. 
+\end{DoxyNote}
+
+
+\subsection{Documentation des fonctions amies et associées}
+\hypertarget{classgrenouilloland_1_1CaseGraphique_afaa793860facc1cb19fbc6b54b38c4f8}{\index{grenouilloland\-::\-Case\-Graphique@{grenouilloland\-::\-Case\-Graphique}!Grenouilloland\-Graphique@{Grenouilloland\-Graphique}}
+\index{Grenouilloland\-Graphique@{Grenouilloland\-Graphique}!grenouilloland::CaseGraphique@{grenouilloland\-::\-Case\-Graphique}}
+\subsubsection[{Grenouilloland\-Graphique}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Grenouilloland\-Graphique}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classgrenouilloland_1_1CaseGraphique_afaa793860facc1cb19fbc6b54b38c4f8}
+Declaration d'amitié. 
+
+\subsection{Documentation des données membres}
+\hypertarget{classgrenouilloland_1_1CaseGraphique_ae4e49cd04cefb12a3b42e2e57678520a}{\index{grenouilloland\-::\-Case\-Graphique@{grenouilloland\-::\-Case\-Graphique}!\-\_\-colonne@{\-\_\-colonne}}
+\index{\-\_\-colonne@{\-\_\-colonne}!grenouilloland::CaseGraphique@{grenouilloland\-::\-Case\-Graphique}}
+\subsubsection[{\-\_\-colonne}]{\setlength{\rightskip}{0pt plus 5cm}const int grenouilloland\-::\-Case\-Graphique\-::\-\_\-colonne\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1CaseGraphique_ae4e49cd04cefb12a3b42e2e57678520a}
+Numero de colonne de cette case dans le modele. \hypertarget{classgrenouilloland_1_1CaseGraphique_a020fe5a8b0c1e7d803c50ba268ec83d7}{\index{grenouilloland\-::\-Case\-Graphique@{grenouilloland\-::\-Case\-Graphique}!\-\_\-etats@{\-\_\-etats}}
+\index{\-\_\-etats@{\-\_\-etats}!grenouilloland::CaseGraphique@{grenouilloland\-::\-Case\-Graphique}}
+\subsubsection[{\-\_\-etats}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$ int, std\-::unique\-\_\-ptr$<$ Gtk\-::\-Image $>$ $>$ grenouilloland\-::\-Case\-Graphique\-::\-\_\-etats\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1CaseGraphique_a020fe5a8b0c1e7d803c50ba268ec83d7}
+Pixmaps representant les etats possibles d'une case graphique.
+
+\begin{DoxyNote}{Note}
+En toute rigueur, cette map devrait etre definie en tant qu'attribut de classe et non d'instance. Cependant, G\-T\-K ne supporte pas qu'un widget puisse appartenir a plusieurs container. Par consequent, nous devons repliquer les images, d'ou un gaspillage de memoire. 
+\end{DoxyNote}
+\hypertarget{classgrenouilloland_1_1CaseGraphique_a66f59a2fcbc16ffda0bd1e30471737f3}{\index{grenouilloland\-::\-Case\-Graphique@{grenouilloland\-::\-Case\-Graphique}!\-\_\-ligne@{\-\_\-ligne}}
+\index{\-\_\-ligne@{\-\_\-ligne}!grenouilloland::CaseGraphique@{grenouilloland\-::\-Case\-Graphique}}
+\subsubsection[{\-\_\-ligne}]{\setlength{\rightskip}{0pt plus 5cm}const int grenouilloland\-::\-Case\-Graphique\-::\-\_\-ligne\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1CaseGraphique_a66f59a2fcbc16ffda0bd1e30471737f3}
+Numero de ligne de cette case dans le modele. \hypertarget{classgrenouilloland_1_1CaseGraphique_a0ef536735e07c4f90f32afa4b74928d3}{\index{grenouilloland\-::\-Case\-Graphique@{grenouilloland\-::\-Case\-Graphique}!\-\_\-ptr\-Grenouilloland\-Graphique@{\-\_\-ptr\-Grenouilloland\-Graphique}}
+\index{\-\_\-ptr\-Grenouilloland\-Graphique@{\-\_\-ptr\-Grenouilloland\-Graphique}!grenouilloland::CaseGraphique@{grenouilloland\-::\-Case\-Graphique}}
+\subsubsection[{\-\_\-ptr\-Grenouilloland\-Graphique}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Grenouilloland\-Graphique}$\ast$ const grenouilloland\-::\-Case\-Graphique\-::\-\_\-ptr\-Grenouilloland\-Graphique\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1CaseGraphique_a0ef536735e07c4f90f32afa4b74928d3}
+Unique representation graphique du jeu proprietaire de cette case graphique. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+src/vue/include/Case\-Graphique.\-hh\item 
+src/vue/Case\-Graphique.\-cpp\end{DoxyCompactItemize}

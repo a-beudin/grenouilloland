@@ -1,0 +1,5 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node3" href="$classgrenouilloland_1_1Chronometre.html" title="Afficheur du temps de Jeu." alt="" coords="112,5,296,35"/>
+<area shape="rect" id="node5" href="$classgrenouilloland_1_1Dimension.html" title="Controleur de la dimension du Jeu." alt="" coords="119,59,289,88"/>
+<area shape="rect" id="node7" href="$classgrenouilloland_1_1PointsDeVie.html" title="Afficheur des points de vie de la Grenouille." alt="" coords="113,112,295,141"/>
+</map>

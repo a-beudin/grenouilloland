@@ -1,0 +1,149 @@
+\hypertarget{classgrenouilloland_1_1Element}{\section{Référence de la classe grenouilloland\-:\-:Element}
+\label{classgrenouilloland_1_1Element}\index{grenouilloland\-::\-Element@{grenouilloland\-::\-Element}}
+}
+
+
+\hyperlink{classgrenouilloland_1_1Element}{Element} du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu} Grenouilloland.  
+
+
+
+
+{\ttfamily \#include $<$Element.\-hh$>$}
+
+
+
+Graphe d'héritage de grenouilloland\-:\-:Element\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgrenouilloland_1_1Element__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de grenouilloland\-:\-:Element\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{classgrenouilloland_1_1Element__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgrenouilloland_1_1Element_1_1Mandataire}{Mandataire}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classgrenouilloland_1_1Element_1_1Mandataire}{Mandataire} de la classe \hyperlink{classgrenouilloland_1_1Element}{Element} du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu} Grenouilloland. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classgrenouilloland_1_1Element_aa66f20df4bbbd9c2253f80e612204f18}{$\sim$\-Element} ()=0
+\item 
+virtual const int \& \hyperlink{classgrenouilloland_1_1Element_aa05b1a2f2e0e8eb0e5ebf942b8934388}{lire\-Id} () const =0
+\item 
+virtual bool \hyperlink{classgrenouilloland_1_1Element_adf2a739bbd6b529dc387cb95cb925f53}{is\-Eau} () const 
+\item 
+const \hyperlink{classgrenouilloland_1_1Etat}{Etat} \& \hyperlink{classgrenouilloland_1_1Element_a2391eb9fde2b7d5afd8588f9141d0a35}{lire\-Etat} () const 
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgrenouilloland_1_1Element_a6177b43ce377505948db0db58316fa0f}{Element} (const \hyperlink{classgrenouilloland_1_1StrategieAbstraite}{Strategie\-Abstraite} \&strategie)
+\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgrenouilloland_1_1Etat}{Etat} \hyperlink{classgrenouilloland_1_1Element_a6c404d7c7e11b3add7b2cc899c4a3685}{\-\_\-etat}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+\hyperlink{classgrenouilloland_1_1Element}{Element} du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu} Grenouilloland. 
+
+\begin{DoxyAuthor}{Auteur}
+Beudin.\-Alexandre Dauxais.\-Yann 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+05.\-01.\-2012
+\end{DoxyDate}
+Declaration de la classe abstraite \hyperlink{classgrenouilloland_1_1Element}{Element} réprésentant la structure d'un élément du jeu Grenouilloland. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{classgrenouilloland_1_1Element_aa66f20df4bbbd9c2253f80e612204f18}{\index{grenouilloland\-::\-Element@{grenouilloland\-::\-Element}!$\sim$\-Element@{$\sim$\-Element}}
+\index{$\sim$\-Element@{$\sim$\-Element}!grenouilloland::Element@{grenouilloland\-::\-Element}}
+\subsubsection[{$\sim$\-Element}]{\setlength{\rightskip}{0pt plus 5cm}Element\-::$\sim$\-Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classgrenouilloland_1_1Element_aa66f20df4bbbd9c2253f80e612204f18}
+Destructeur de l'élément. \hypertarget{classgrenouilloland_1_1Element_a6177b43ce377505948db0db58316fa0f}{\index{grenouilloland\-::\-Element@{grenouilloland\-::\-Element}!Element@{Element}}
+\index{Element@{Element}!grenouilloland::Element@{grenouilloland\-::\-Element}}
+\subsubsection[{Element}]{\setlength{\rightskip}{0pt plus 5cm}Element\-::\-Element (
+\begin{DoxyParamCaption}
+\item[{const {\bf Strategie\-Abstraite} \&}]{strategie}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Element_a6177b43ce377505948db0db58316fa0f}
+Constructeur logique instanciant un élément.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em strategie} & -\/ stratégie appliqué par l'élément. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classgrenouilloland_1_1Element_adf2a739bbd6b529dc387cb95cb925f53}{\index{grenouilloland\-::\-Element@{grenouilloland\-::\-Element}!is\-Eau@{is\-Eau}}
+\index{is\-Eau@{is\-Eau}!grenouilloland::Element@{grenouilloland\-::\-Element}}
+\subsubsection[{is\-Eau}]{\setlength{\rightskip}{0pt plus 5cm}bool Element\-::is\-Eau (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classgrenouilloland_1_1Element_adf2a739bbd6b529dc387cb95cb925f53}
+Méthode permettant de détecter si l'élément est de l'eau.
+
+return false. 
+
+Réimplémentée dans \hyperlink{classgrenouilloland_1_1Eau_afddd34ea4f2babcfe78b1be9dfd2f7af}{grenouilloland\-::\-Eau}.
+
+\hypertarget{classgrenouilloland_1_1Element_a2391eb9fde2b7d5afd8588f9141d0a35}{\index{grenouilloland\-::\-Element@{grenouilloland\-::\-Element}!lire\-Etat@{lire\-Etat}}
+\index{lire\-Etat@{lire\-Etat}!grenouilloland::Element@{grenouilloland\-::\-Element}}
+\subsubsection[{lire\-Etat}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Etat} \& Element\-::lire\-Etat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1Element_a2391eb9fde2b7d5afd8588f9141d0a35}
+Accesseur de l'état de l'élément.
+
+\begin{DoxyReturn}{Renvoie}
+valeur de \hyperlink{classgrenouilloland_1_1Element_a6c404d7c7e11b3add7b2cc899c4a3685}{\-\_\-etat}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Element_aa05b1a2f2e0e8eb0e5ebf942b8934388}{\index{grenouilloland\-::\-Element@{grenouilloland\-::\-Element}!lire\-Id@{lire\-Id}}
+\index{lire\-Id@{lire\-Id}!grenouilloland::Element@{grenouilloland\-::\-Element}}
+\subsubsection[{lire\-Id}]{\setlength{\rightskip}{0pt plus 5cm}virtual const int\& grenouilloland\-::\-Element\-::lire\-Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classgrenouilloland_1_1Element_aa05b1a2f2e0e8eb0e5ebf942b8934388}
+Accesseur de l'I\-D identifiant le type de l'élément.
+
+\begin{DoxyReturn}{Renvoie}
+valeur de l'I\-D. 
+\end{DoxyReturn}
+
+
+Implémenté dans \hyperlink{classgrenouilloland_1_1Eau_a649c33d717a7bec06683a18cbd13bd52}{grenouilloland\-::\-Eau}, \hyperlink{classgrenouilloland_1_1Nenuphar_a3a77c3463dd389cf0eee275ee96a7939}{grenouilloland\-::\-Nenuphar}, \hyperlink{classgrenouilloland_1_1NenupharDopant_a45374c5e71552f943b8a9729892d5f02}{grenouilloland\-::\-Nenuphar\-Dopant}, \hyperlink{classgrenouilloland_1_1NenupharImmortel_a6fadef66c4d46dea30e0b5ba933ff1d6}{grenouilloland\-::\-Nenuphar\-Immortel}, \hyperlink{classgrenouilloland_1_1NenupharMortel_aac1c7add92c76c06a2848fe264a59bdd}{grenouilloland\-::\-Nenuphar\-Mortel}, \hyperlink{classgrenouilloland_1_1NenupharNutritif_ac27d0cfbf8e2f4ee647031983a5fc1f4}{grenouilloland\-::\-Nenuphar\-Nutritif}, et \hyperlink{classgrenouilloland_1_1NenupharVeneneux_afbf5c6a0b2f88d65027a6582dca402d1}{grenouilloland\-::\-Nenuphar\-Veneneux}.
+
+
+
+\subsection{Documentation des données membres}
+\hypertarget{classgrenouilloland_1_1Element_a6c404d7c7e11b3add7b2cc899c4a3685}{\index{grenouilloland\-::\-Element@{grenouilloland\-::\-Element}!\-\_\-etat@{\-\_\-etat}}
+\index{\-\_\-etat@{\-\_\-etat}!grenouilloland::Element@{grenouilloland\-::\-Element}}
+\subsubsection[{\-\_\-etat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Etat} grenouilloland\-::\-Element\-::\-\_\-etat\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Element_a6c404d7c7e11b3add7b2cc899c4a3685}
+\hyperlink{classgrenouilloland_1_1Etat}{Etat} de l'élément. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+src/modele/include/Element.\-hh\item 
+src/modele/Element.\-cpp\end{DoxyCompactItemize}

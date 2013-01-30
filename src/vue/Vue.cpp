@@ -1,0 +1,475 @@
+/********************************
+ * Definition de la classe Vue. *
+ ********************************/
+
+#include "Presentateur.hh"
+
+using namespace grenouilloland;
+
+/****************
+ * initialiser. *
+ ****************/
+
+void 
+Vue::initialiser() {
+
+  	// Creations des pixbufs.
+  	_images["grenouilloland"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "grenouille.gif");
+
+  	_images["eau"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "eau-96x96.png");
+
+  	_images["nen"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "nen-96x96.png");
+ 	_images["nen_moyen"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "nen_moyen-96x96.png");
+  	_images["nen_petit"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "nen_petit-96x96.png");
+
+  	_images["nen_dopant"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "nen_dopant-96x96.png");
+	_images["nen_dopant_moyen"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "nen_dopant_moyen-96x96.png");
+	_images["nen_dopant_petit"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "nen_dopant_petit-96x96.png");
+
+  	_images["nen_nutritif"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "nen_nutritif-96x96.png");
+	_images["nen_nutritif_moyen"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "nen_nutritif_moyen-96x96.png");
+	_images["nen_nutritif_petit"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "nen_nutritif_petit-96x96.png");
+
+  	_images["nen_veneneux"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "nen_veneneux-96x96.png");
+	_images["nen_veneneux_moyen"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "nen_veneneux_moyen-96x96.png");
+	_images["nen_veneneux_petit"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "nen_veneneux_petit-96x96.png");
+    	
+  	_images["gren_eau"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "gren_eau.png");
+
+  	_images["gren_nen"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "gren_nen-96x96.png");
+ 	_images["gren_nen_moyen"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "gren_nen_moyen-96x96.png");
+  	_images["gren_nen_petit"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "gren_nen_petit-96x96.png");
+
+  	_images["gren_nen_dopant"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "gren_nen_dopant-96x96.png");
+	_images["gren_nen_dopant_moyen"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "gren_nen_dopant_moyen-96x96.png");
+	_images["gren_nen_dopant_petit"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "gren_nen_dopant_petit-96x96.png");
+
+  	_images["gren_nen_nutritif"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "gren_nen_nutritif-96x96.png");
+	_images["gren_nen_nutritif_moyen"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "gren_nen_nutritif_moyen-96x96.png");
+	_images["gren_nen_nutritif_petit"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "gren_nen_nutritif_petit-96x96.png");
+
+  	_images["gren_nen_veneneux"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "gren_nen_veneneux-96x96.png");
+	_images["gren_nen_veneneux_moyen"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "gren_nen_veneneux_moyen-96x96.png");
+	_images["gren_nen_veneneux_petit"] = 
+    	Gdk::Pixbuf::create_from_file(_cheminImages + "gren_nen_veneneux_petit-96x96.png");
+}
+
+/*****************
+ * lireTitreVue. *
+ *****************/
+
+const Glib::ustring 
+Vue::lireTitreVue() {
+  return _titreVue;
+}
+
+/************************
+ * lireTitreGrenouilloland. *
+ ************************/
+
+const Glib::ustring 
+Vue::lireTitreGrenouilloland() {
+  return _titreGrenouilloland;
+}
+
+/***********************
+ * lireTitreChronometre. *
+ ***********************/
+
+const Glib::ustring 
+Vue::lireTitreChronometre() {
+  return _titreChronometre;
+}
+
+/***********************
+ * lireTitreDimension. *
+ ***********************/
+
+const Glib::ustring 
+Vue::lireTitreDimension() {
+  return _titreDimension;
+}
+
+/**************
+ * lireImage. *
+ **************/
+
+const Glib::RefPtr< Gdk::Pixbuf>& 
+Vue::lireImage(const Glib::ustring& nom) {
+  return _images[nom];
+}
+
+/********
+ * Vue. *  
+ ********/
+
+Vue::Vue(Presentateur& presentateur):
+  _ptrPresentateur(&presentateur),
+  _ptrGrenouillolandGraphique(new GrenouillolandGraphique(_titreGrenouilloland, *this)),
+  _pointsDeVie(_titrePointsDeVie),
+  _dimension(_titreDimension, *this),
+  _chronometre(_titreChronometre) {
+
+  // Titre de la vue.
+  set_title(_titreVue);
+
+  // Icone
+  set_icon(_images["grenouilloland"]);
+
+  // Gestionnaire de mise en forme associe à la fenetre principal.
+  Gtk::VBox* gestionnaire = Gtk::manage(new Gtk::VBox());
+  add(*gestionnaire);
+
+  // Construction de la barre de menus et d'outils.
+  construireBarreMenusEtOutils(*gestionnaire);
+
+  // Construction de la partie centrale de la fenetre principal.
+  construirePartieCentrale(*gestionnaire);
+
+  // Construction de la partie inferieure de la fenetre principal.
+  construirePartieInferieure(*gestionnaire);
+
+  // La fenetre principale est rendue non redimensionnable. Cela permettra de 
+  // forcer le recalcul des dimensions lorsque la dimension du jeu sera 
+  // modifiée.
+  set_resizable(false);
+
+  // Affichage de tous les composants graphiques.
+  show_all_children();
+  
+}
+
+/*********************
+ * lirePresentateur. *
+ *********************/
+
+const Presentateur& 
+Vue::lirePresentateur() const {
+  return *_ptrPresentateur;
+}
+
+/*******************************
+ * lirePresentateurModifiable. *
+ *******************************/
+
+Presentateur& 
+Vue::lirePresentateurModifiable() {
+  return *_ptrPresentateur;
+}
+
+/****************
+ *  miseAJour.  *
+ ****************/
+
+void
+Vue::mettreAJour() {
+
+	// Mise à jour de l'affichage des points de vie de la grenouille.
+	_pointsDeVie.mettreAJour(*_ptrPresentateur);
+
+	// Mise à jour des cases du grenouilloland graphique.
+	_ptrGrenouillolandGraphique->mettreAJour(*_ptrPresentateur);
+
+	// Mise à jour de l'affichage du chronomètre de jeu.
+	_chronometre.mettreAJour(*_ptrPresentateur);
+}
+
+/****************
+ * verrouiller. *
+ ****************/
+
+void
+Vue::verrouiller() {
+  _verrou.lock();
+}
+
+/*****************
+ * deverrouiller. *
+ *****************/
+
+void
+Vue::deverrouiller() {
+  _verrou.unlock();
+}
+
+/*********************************
+ * construireBarreMenusEtOutils. *
+ *********************************/
+
+void
+Vue::construireBarreMenusEtOutils(Gtk::VBox& gestionnaire) {
+
+  // Groupe d'actions.
+  Glib::RefPtr< Gtk::ActionGroup > groupe = Gtk::ActionGroup::create();
+  groupe->add(Gtk::Action::create("CommandesMenu", 
+				  "Commandes"));
+
+  // Action "Suivante".
+  {
+    Glib::RefPtr< Gtk::Action > action = 
+      Gtk::Action::create("CommandesPreparer", 
+			  Gtk::Stock::EXECUTE,
+			  "Préparer",
+			  "Préparer une nouvelle partie.");
+    auto crochet = sigc::mem_fun(*this, &Vue::cbChangerModele);
+    groupe->add(action, crochet); 
+  }
+
+  // Action "Nouveau".
+  {
+    Glib::RefPtr< Gtk::Action > action = 
+      Gtk::Action::create("CommandesNouveau", 
+			  Gtk::Stock::NEW,
+			  "Nouvelle partie",
+			  "Lancer une nouvelle partie.");
+    auto crochet = sigc::mem_fun(*this, &Vue::cbNouveau);
+    groupe->add(action, crochet); 
+  }
+
+  // Action "A propos ...".
+  {
+    Glib::RefPtr< Gtk::Action > action = 
+      Gtk::Action::create("CommandesAPropos", 
+			  Gtk::Stock::ABOUT,
+			  "À propos ...",
+			  "Présenter l'application.");
+    auto crochet = sigc::mem_fun(*this, &Vue::cbAPropos);
+    groupe->add(action, crochet); 
+  }
+
+  // Action "Quitter".
+  {
+    Glib::RefPtr< Gtk::Action > action = 
+      Gtk::Action::create("CommandesQuitter", 
+			  Gtk::Stock::QUIT,
+			  "Quitter",
+			  "Quitter l'application.");
+    auto crochet = sigc::mem_fun(*this, &Vue::cbQuitter);
+    groupe->add(action, crochet);
+  }
+
+  // Manager des groupes d'actions.
+  Glib::RefPtr< Gtk::UIManager > manager = Gtk::UIManager::create();
+  manager->insert_action_group(groupe);
+  add_accel_group(manager->get_accel_group());
+
+  // Structures XML des barres de menus et d'outils.
+  const Glib::ustring structures = 
+    "<ui>"
+    "  <menubar name='BarreMenus'>"
+    "    <menu action='CommandesMenu'>"
+    "      <menuitem action='CommandesPreparer'/>"
+    "      <menuitem action='CommandesNouveau'/>"
+    "      <menuitem action='CommandesAPropos'/>"
+    "      <separator/>"
+    "      <menuitem action='CommandesQuitter'/>"
+    "    </menu>"
+    "  </menubar>"
+    "  <toolbar  name='BarreOutils'>"
+    "    <toolitem action='CommandesPreparer'/>"
+    "    <toolitem action='CommandesNouveau'/>"
+    "    <toolitem action='CommandesAPropos'/>"
+    "    <toolitem action='CommandesQuitter'/>"
+    "  </toolbar>"
+    "</ui>";
+  manager->add_ui_from_string(structures);
+
+  // Ajout des barres de menus et d'outils dans le gestionnaire. Chacun
+  // occupe une ligne complete de la grille.
+
+  Gtk::Widget* ptrBarreMenus = manager->get_widget("/BarreMenus");
+  if (ptrBarreMenus != nullptr) {
+    gestionnaire.pack_start(*ptrBarreMenus, Gtk::PACK_SHRINK);
+  }
+  Gtk::Widget* ptrBarreOutils = manager->get_widget("/BarreOutils");
+  if(ptrBarreOutils != nullptr) {
+    gestionnaire.pack_start(*ptrBarreOutils, Gtk::PACK_SHRINK);
+  }
+}
+
+/*****************************
+ * construirePartieCentrale. *
+ *****************************/
+
+void
+Vue::construirePartieCentrale(Gtk::VBox& gestionnaire) {
+
+	_gestionnaireCentre.pack_start(_pointsDeVie, Gtk::PACK_SHRINK);
+  	_gestionnaireCentre.pack_start(*_ptrGrenouillolandGraphique);
+	gestionnaire.add(_gestionnaireCentre);
+
+}
+
+
+/*******************************
+ * construirePartieInferieure. *
+ *******************************/
+
+void 
+Vue::construirePartieInferieure(Gtk::VBox& gestionnaire) {
+
+	_gestionnaireBas.pack_start(_dimension, Gtk::PACK_SHRINK);
+	_gestionnaireBas.pack_start(_chronometre);
+	gestionnaire.add(_gestionnaireBas);
+
+}
+
+/**************
+ * cbNouveau. *
+ **************/
+
+void 
+Vue::cbNouveau() {
+
+  // Verrouillage.
+  verrouiller();
+
+  Presentateur::MandataireVue::lancerPartie(*_ptrPresentateur);
+
+  // Deverrouillage.
+  deverrouiller();
+
+}
+
+/********************
+ * cbChangerModele. *
+ ********************/
+
+void
+Vue::cbChangerModele() {
+
+  // Verrouillage.
+  verrouiller();
+
+  // Creation, via le presentateur associe a cette vue, d'un nouveau modele avec
+  // la dimension souhaitee.
+  const int dimension = _dimension.valeur();
+  Presentateur::MandataireVue::nouveauModele(*_ptrPresentateur, dimension);
+
+  // Suppression de l'ancienne representation graphique du jeu et remplacement
+  // par une nouvelle adaptee a la nouvelle dimension.
+  _gestionnaireCentre.remove(*_ptrGrenouillolandGraphique);
+  _ptrGrenouillolandGraphique.reset(new GrenouillolandGraphique(_titreGrenouilloland, 
+							*this));
+  _gestionnaireCentre.pack_start(*_ptrGrenouillolandGraphique);
+
+  // Re-affichage de tous les composants de la fenetre. Le fait que cette
+  // derniere soit non redimensionnable entraine le recalcul des dimensions
+  // de tous ses composants.
+  show_all_children();
+
+  // Deverrouillage.
+  deverrouiller();
+
+}
+
+/****************
+ * cbAPropos(). *
+ ****************/
+
+void 
+Vue::cbAPropos() {
+
+  // Construction du dialogue.
+  Gtk::AboutDialog apropos;
+  apropos.set_transient_for(*this);
+  apropos.set_program_name("Grenouilloland");
+  apropos.set_version("1.0");
+  apropos.set_copyright("Yann Dauxais - Alexandre Beudin");
+  apropos.set_comments("Devoir C++/Gtkmm du M1 Info.");
+  apropos.set_authors({ "Yann Dauxais et Alexandre Beudin" });
+  apropos.set_logo(_images["grenouilloland"]);
+
+  // Affichage du dialogue.
+  apropos.run();
+
+  // Effacement du dialogue.
+  apropos.hide();
+
+}
+
+/**************
+ * cbQuitter. *
+ **************/
+
+void 
+Vue::cbQuitter() {
+
+  // Verrouillage.
+  verrouiller();
+
+  // Effacement de la fenetre principale.
+  hide();
+
+  // Deverrouillage.
+  deverrouiller();
+
+}
+
+/**************
+ * _titreVue. *
+ **************/
+
+const Glib::ustring Vue::_titreVue("Grenouilloland");
+
+/*********************
+ * _titreGrenouilloland. *
+ *********************/
+
+const Glib::ustring Vue::_titreGrenouilloland("Plateau");
+
+/********************
+ * _titrePointsDeVie. *
+ ********************/
+
+const Glib::ustring Vue::_titrePointsDeVie("Points de vie");
+
+/********************
+ * _titreChronometre. *
+ ********************/
+
+const Glib::ustring Vue::_titreChronometre("Chronomètre");
+
+/********************
+ * _titreDimension. *
+ ********************/
+
+const Glib::ustring Vue::_titreDimension("Résolution");
+
+/******************
+ * _cheminImages. *
+ ******************/
+
+const Glib::ustring Vue::_cheminImages("src/ressources/images/");
+
+/************
+ * _images. *
+ ************/
+
+std::map< Glib::ustring, Glib::RefPtr< Gdk::Pixbuf> > Vue::_images;

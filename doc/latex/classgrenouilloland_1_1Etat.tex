@@ -1,0 +1,97 @@
+\hypertarget{classgrenouilloland_1_1Etat}{\section{Référence de la classe grenouilloland\-:\-:Etat}
+\label{classgrenouilloland_1_1Etat}\index{grenouilloland\-::\-Etat@{grenouilloland\-::\-Etat}}
+}
+
+
+\hyperlink{classgrenouilloland_1_1Etat}{Etat} du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu} Grenouilloland.  
+
+
+
+
+{\ttfamily \#include $<$Etat.\-hh$>$}
+
+\subsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classgrenouilloland_1_1Etat_a04e979910c6a5857330cebd68038c528}{Enum} \{ {\bfseries Grand}, 
+{\bfseries Moyen}, 
+{\bfseries Petit}, 
+{\bfseries Mort}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgrenouilloland_1_1Etat_af35c6b8c0aaae1a0d8d5e19b03320a32}{Etat} ()
+\item 
+\hyperlink{classgrenouilloland_1_1Etat_adfac536ad3aceee730c8944e1d9a8ef1}{Etat} (const \hyperlink{classgrenouilloland_1_1Etat_a04e979910c6a5857330cebd68038c528}{Enum} \&e)
+\item 
+bool \hyperlink{classgrenouilloland_1_1Etat_a8df3493bfad0afcb6ae8f4dd0e81bf16}{operator==} (const \hyperlink{classgrenouilloland_1_1Etat_a04e979910c6a5857330cebd68038c528}{Enum} \&e) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+\hyperlink{classgrenouilloland_1_1Etat}{Etat} du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu} Grenouilloland. 
+
+\begin{DoxyAuthor}{Auteur}
+Beudin.\-Alexandre Dauxais.\-Yann 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+05.\-01.\-2012
+\end{DoxyDate}
+Declaration de la classe \hyperlink{classgrenouilloland_1_1Etat}{Etat} réprésentant les différents états d'un élément du jeu Grenouilloland. 
+
+\subsection{Documentation des énumérations membres}
+\hypertarget{classgrenouilloland_1_1Etat_a04e979910c6a5857330cebd68038c528}{\index{grenouilloland\-::\-Etat@{grenouilloland\-::\-Etat}!Enum@{Enum}}
+\index{Enum@{Enum}!grenouilloland::Etat@{grenouilloland\-::\-Etat}}
+\subsubsection[{Enum}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf grenouilloland\-::\-Etat\-::\-Enum}}}\label{classgrenouilloland_1_1Etat_a04e979910c6a5857330cebd68038c528}
+Enumeration regroupant les différents état possible d'un élément. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{classgrenouilloland_1_1Etat_af35c6b8c0aaae1a0d8d5e19b03320a32}{\index{grenouilloland\-::\-Etat@{grenouilloland\-::\-Etat}!Etat@{Etat}}
+\index{Etat@{Etat}!grenouilloland::Etat@{grenouilloland\-::\-Etat}}
+\subsubsection[{Etat}]{\setlength{\rightskip}{0pt plus 5cm}grenouilloland\-::\-Etat\-::\-Etat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgrenouilloland_1_1Etat_af35c6b8c0aaae1a0d8d5e19b03320a32}
+Constructeur par défaut d'un état. \hypertarget{classgrenouilloland_1_1Etat_adfac536ad3aceee730c8944e1d9a8ef1}{\index{grenouilloland\-::\-Etat@{grenouilloland\-::\-Etat}!Etat@{Etat}}
+\index{Etat@{Etat}!grenouilloland::Etat@{grenouilloland\-::\-Etat}}
+\subsubsection[{Etat}]{\setlength{\rightskip}{0pt plus 5cm}Etat\-::\-Etat (
+\begin{DoxyParamCaption}
+\item[{const {\bf Enum} \&}]{e}
+\end{DoxyParamCaption}
+)}}\label{classgrenouilloland_1_1Etat_adfac536ad3aceee730c8944e1d9a8ef1}
+Constructeur logique d'un état.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em e} & -\/ valeur de l'état. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classgrenouilloland_1_1Etat_a8df3493bfad0afcb6ae8f4dd0e81bf16}{\index{grenouilloland\-::\-Etat@{grenouilloland\-::\-Etat}!operator==@{operator==}}
+\index{operator==@{operator==}!grenouilloland::Etat@{grenouilloland\-::\-Etat}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Etat\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Enum} \&}]{e}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1Etat_a8df3493bfad0afcb6ae8f4dd0e81bf16}
+Opérateur d'égalité d'un état.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em e} & -\/ valeur de l'état à comparer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+true en cas d'égalité, false sinon. 
+\end{DoxyReturn}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+src/modele/include/Etat.\-hh\item 
+src/modele/Etat.\-cpp\end{DoxyCompactItemize}

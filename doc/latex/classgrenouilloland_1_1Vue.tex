@@ -1,0 +1,460 @@
+\hypertarget{classgrenouilloland_1_1Vue}{\section{Référence de la classe grenouilloland\-:\-:Vue}
+\label{classgrenouilloland_1_1Vue}\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}}
+}
+
+
+\hyperlink{classgrenouilloland_1_1Vue}{Vue} de l'application.  
+
+
+
+
+{\ttfamily \#include $<$Vue.\-hh$>$}
+
+
+
+Graphe d'héritage de grenouilloland\-:\-:Vue\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classgrenouilloland_1_1Vue__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de grenouilloland\-:\-:Vue\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgrenouilloland_1_1Vue__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgrenouilloland_1_1Vue_1_1Mandataire}{Mandataire}
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgrenouilloland_1_1Vue_a757da0d74ff38e0c6f95408ca48290df}{Vue} (\hyperlink{classgrenouilloland_1_1Presentateur}{Presentateur} \&presentateur)
+\item 
+const \hyperlink{classgrenouilloland_1_1Presentateur}{Presentateur} \& \hyperlink{classgrenouilloland_1_1Vue_a9ef1dcf95036a43bec9284168924a653}{lire\-Presentateur} () const 
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classgrenouilloland_1_1Vue_afdd453417b5b374129e27d739750d449}{initialiser} ()
+\item 
+static const Glib\-::ustring \hyperlink{classgrenouilloland_1_1Vue_a223dad39b984bc48648a69cb97b5ff6e}{lire\-Titre\-Vue} ()
+\item 
+static const Glib\-::ustring \hyperlink{classgrenouilloland_1_1Vue_a1c46be867356f059d3b96b909920963b}{lire\-Titre\-Grenouilloland} ()
+\item 
+static const Glib\-::ustring \hyperlink{classgrenouilloland_1_1Vue_a36b09d267fb47c48ca326ea88c0e946c}{lire\-Titre\-Points\-De\-Vie} ()
+\item 
+static const Glib\-::ustring \hyperlink{classgrenouilloland_1_1Vue_a88c78d10cc710d33358a3176e26faa51}{lire\-Titre\-Chronometre} ()
+\item 
+static const Glib\-::ustring \hyperlink{classgrenouilloland_1_1Vue_adf5485ae9e2d418cffe7c27d273affa8}{lire\-Titre\-Dimension} ()
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgrenouilloland_1_1Vue_a05dde5184e07bb61266e311b5fca58e6}{mettre\-A\-Jour} ()
+\item 
+\hyperlink{classgrenouilloland_1_1Presentateur}{Presentateur} \& \hyperlink{classgrenouilloland_1_1Vue_a69daf9edcf49ae15bb1d593f642bde07}{lire\-Presentateur\-Modifiable} ()
+\item 
+void \hyperlink{classgrenouilloland_1_1Vue_a8d220428da4420cdb0bf039c915412ac}{verrouiller} ()
+\item 
+void \hyperlink{classgrenouilloland_1_1Vue_a6fa4cd2dc80413b819679fdd24ba7e2e}{deverrouiller} ()
+\item 
+void \hyperlink{classgrenouilloland_1_1Vue_a6f7d83c684de2e51c2536d74614c6a21}{construire\-Barre\-Menus\-Et\-Outils} (Gtk\-::\-V\-Box \&gestionnaire)
+\item 
+void \hyperlink{classgrenouilloland_1_1Vue_a5020ff24aa99091a71f8b812be8578dc}{construire\-Partie\-Centrale} (Gtk\-::\-V\-Box \&gestionnaire)
+\item 
+void \hyperlink{classgrenouilloland_1_1Vue_ac2f033ddbd1508798f748e8fb816eb34}{construire\-Partie\-Inferieure} (Gtk\-::\-V\-Box \&gestionnaire)
+\item 
+void \hyperlink{classgrenouilloland_1_1Vue_a094c688903d968d9366460a5431a0130}{cb\-Nouveau} ()
+\item 
+void \hyperlink{classgrenouilloland_1_1Vue_a253d6db7fc7664d060025cd03d9566d4}{cb\-Changer\-Modele} ()
+\item 
+void \hyperlink{classgrenouilloland_1_1Vue_a3b30a58e0986b5ad9368a85995a39293}{cb\-A\-Propos} ()
+\item 
+void \hyperlink{classgrenouilloland_1_1Vue_a136783ac8ab9e7085630e9db4924a189}{cb\-Quitter} ()
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées statiques}
+\begin{DoxyCompactItemize}
+\item 
+static const Glib\-::\-Ref\-Ptr\\*
+$<$ Gdk\-::\-Pixbuf $>$ \& \hyperlink{classgrenouilloland_1_1Vue_a13bd0ca693c418c7b5ee30ac7be56448}{lire\-Image} (const Glib\-::ustring \&nom)
+\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgrenouilloland_1_1Presentateur}{Presentateur} $\ast$const \hyperlink{classgrenouilloland_1_1Vue_a18b21aec8d74287eb28374399827c022}{\-\_\-ptr\-Presentateur}
+\item 
+std\-::unique\-\_\-ptr\\*
+$<$ \hyperlink{classgrenouilloland_1_1GrenouillolandGraphique}{Grenouilloland\-Graphique} $>$ \hyperlink{classgrenouilloland_1_1Vue_a998feee5bed8136f999d2e3484d0c6ca}{\-\_\-ptr\-Grenouilloland\-Graphique}
+\item 
+\hyperlink{classgrenouilloland_1_1PointsDeVie}{Points\-De\-Vie} \hyperlink{classgrenouilloland_1_1Vue_af6f2bba3b33001e5c0807d8e98c0b0fa}{\-\_\-points\-De\-Vie}
+\item 
+\hyperlink{classgrenouilloland_1_1Dimension}{Dimension} \hyperlink{classgrenouilloland_1_1Vue_a8913ac00882895d6a0552edc92266883}{\-\_\-dimension}
+\item 
+\hyperlink{classgrenouilloland_1_1Chronometre}{Chronometre} \hyperlink{classgrenouilloland_1_1Vue_a6632cb40512ad2d01c9a52b33de24aeb}{\-\_\-chronometre}
+\item 
+Gtk\-::\-H\-Box \hyperlink{classgrenouilloland_1_1Vue_a64a3b9c74425f9a70fbae4c5bc7d9c78}{\-\_\-gestionnaire\-Centre}
+\item 
+Gtk\-::\-H\-Box \hyperlink{classgrenouilloland_1_1Vue_a65d5b3129325746ee1d1dbf0c3f3e0db}{\-\_\-gestionnaire\-Bas}
+\item 
+std\-::mutex \hyperlink{classgrenouilloland_1_1Vue_ab6f850d86942bdef050596e90a34494e}{\-\_\-verrou}
+\end{DoxyCompactItemize}
+\subsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+static const Glib\-::ustring \hyperlink{classgrenouilloland_1_1Vue_a5adfea17feebe0674431b82d8215240e}{\-\_\-titre\-Vue}
+\item 
+static const Glib\-::ustring \hyperlink{classgrenouilloland_1_1Vue_a8f48d405d345306684f25471c377be4b}{\-\_\-titre\-Grenouilloland}
+\item 
+static const Glib\-::ustring \hyperlink{classgrenouilloland_1_1Vue_adc86530a0f01ba959d5dcd48a96f8b95}{\-\_\-titre\-Points\-De\-Vie}
+\item 
+static const Glib\-::ustring \hyperlink{classgrenouilloland_1_1Vue_af6206813ed4886372538752ddbaa746c}{\-\_\-titre\-Chronometre}
+\item 
+static const Glib\-::ustring \hyperlink{classgrenouilloland_1_1Vue_a233d73dd3c303194933f0da4d3749efe}{\-\_\-titre\-Dimension}
+\item 
+static const Glib\-::ustring \hyperlink{classgrenouilloland_1_1Vue_a2129d9ff7713d6b8d8c2cd444c6c7344}{\-\_\-chemin\-Images}
+\item 
+static std\-::map$<$ Glib\-::ustring, \\*
+Glib\-::\-Ref\-Ptr$<$ Gdk\-::\-Pixbuf $>$ $>$ \hyperlink{classgrenouilloland_1_1Vue_a1ad2483d0795c038267934208730d415}{\-\_\-images}
+\end{DoxyCompactItemize}
+\subsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgrenouilloland_1_1Vue_ac12b0ba9ebe667c8408ac35bf21598e8}{Case\-Graphique}
+\item 
+class \hyperlink{classgrenouilloland_1_1Vue_aabae1fdc220bf040d4f5c2c057abfcf5}{Dimension}
+\item 
+class \hyperlink{classgrenouilloland_1_1Vue_a2f6a9fb1ac6fc3eaae981e0630df21d8}{Points\-De\-Vie}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+\hyperlink{classgrenouilloland_1_1Vue}{Vue} de l'application. 
+
+\begin{DoxyAuthor}{Auteur}
+Yann Dauxais 
+
+Alexandre Beudin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+6.\-1.\-2013
+\end{DoxyDate}
+Declaration de la classe \hyperlink{classgrenouilloland_1_1Vue}{Vue} representant la vue de l'application, c'est a dire son interface graphique.
+
+\begin{DoxyNote}{Note}
+Une instance de cette classe ne peut etre dupliquee. 
+\end{DoxyNote}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{classgrenouilloland_1_1Vue_a757da0d74ff38e0c6f95408ca48290df}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!Vue@{Vue}}
+\index{Vue@{Vue}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{Vue}]{\setlength{\rightskip}{0pt plus 5cm}Vue\-::\-Vue (
+\begin{DoxyParamCaption}
+\item[{{\bf Presentateur} \&}]{presentateur}
+\end{DoxyParamCaption}
+)}}\label{classgrenouilloland_1_1Vue_a757da0d74ff38e0c6f95408ca48290df}
+Constructeur logique.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em presentateur} & -\/ la valeur de \hyperlink{classgrenouilloland_1_1Vue_a18b21aec8d74287eb28374399827c022}{\-\_\-ptr\-Presentateur}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classgrenouilloland_1_1Vue_a3b30a58e0986b5ad9368a85995a39293}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!cb\-A\-Propos@{cb\-A\-Propos}}
+\index{cb\-A\-Propos@{cb\-A\-Propos}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{cb\-A\-Propos}]{\setlength{\rightskip}{0pt plus 5cm}void Vue\-::cb\-A\-Propos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_a3b30a58e0986b5ad9368a85995a39293}
+Callback permettant de presenter l'application et ses auteurs. Cette methode est invoquee suite a un click sur l'entree \char`\"{}\-A propos ...\char`\"{} du menu \char`\"{}\-Commandes\char`\"{} ou bien sur le bouton correspondant dans la barre d'outils. \hypertarget{classgrenouilloland_1_1Vue_a253d6db7fc7664d060025cd03d9566d4}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!cb\-Changer\-Modele@{cb\-Changer\-Modele}}
+\index{cb\-Changer\-Modele@{cb\-Changer\-Modele}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{cb\-Changer\-Modele}]{\setlength{\rightskip}{0pt plus 5cm}void Vue\-::cb\-Changer\-Modele (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_a253d6db7fc7664d060025cd03d9566d4}
+Callback permettant de preparer une nouvelle partie avec une autre dimension. Cette methode est invoquee par le controleur de la resolution du jeu.
+
+\begin{DoxyNote}{Note}
+Cette methode verrouille cette vue pendant toute son execution. 
+\end{DoxyNote}
+\hypertarget{classgrenouilloland_1_1Vue_a094c688903d968d9366460a5431a0130}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!cb\-Nouveau@{cb\-Nouveau}}
+\index{cb\-Nouveau@{cb\-Nouveau}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{cb\-Nouveau}]{\setlength{\rightskip}{0pt plus 5cm}void Vue\-::cb\-Nouveau (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_a094c688903d968d9366460a5431a0130}
+Callback permettant de preparer le jeu pour une nouvelle partie. Cette methode est invoquee suite a un click sur l'entree \char`\"{}\-Nouveau\char`\"{} du menu \char`\"{}\-Commandes\char`\"{} ou bien sur le bouton correspondant dans la barre d'outils.
+
+\begin{DoxyNote}{Note}
+Cette methode verrouille cette vue pendant toute son execution. 
+\end{DoxyNote}
+\hypertarget{classgrenouilloland_1_1Vue_a136783ac8ab9e7085630e9db4924a189}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!cb\-Quitter@{cb\-Quitter}}
+\index{cb\-Quitter@{cb\-Quitter}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{cb\-Quitter}]{\setlength{\rightskip}{0pt plus 5cm}void Vue\-::cb\-Quitter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_a136783ac8ab9e7085630e9db4924a189}
+Callback permettant de quitter proprement l'application. Cette methode est invoquee suite a un click sur l'entree \char`\"{}\-Quitter\char`\"{} du menu \char`\"{}\-Commandes\char`\"{} ou bien sur le bouton correspondant dans la barre d'outils.
+
+\begin{DoxyNote}{Note}
+Cette methode verrouille cette vue pendant toute son execution. 
+\end{DoxyNote}
+\hypertarget{classgrenouilloland_1_1Vue_a6f7d83c684de2e51c2536d74614c6a21}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!construire\-Barre\-Menus\-Et\-Outils@{construire\-Barre\-Menus\-Et\-Outils}}
+\index{construire\-Barre\-Menus\-Et\-Outils@{construire\-Barre\-Menus\-Et\-Outils}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{construire\-Barre\-Menus\-Et\-Outils}]{\setlength{\rightskip}{0pt plus 5cm}void Vue\-::construire\-Barre\-Menus\-Et\-Outils (
+\begin{DoxyParamCaption}
+\item[{Gtk\-::\-V\-Box \&}]{gestionnaire}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_a6f7d83c684de2e51c2536d74614c6a21}
+Construit les barre de menus et d'outils.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in,out}  & {\em gestionnaire} & -\/ le gestionnaire de mise en forme associe a la fenetre principale. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgrenouilloland_1_1Vue_a5020ff24aa99091a71f8b812be8578dc}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!construire\-Partie\-Centrale@{construire\-Partie\-Centrale}}
+\index{construire\-Partie\-Centrale@{construire\-Partie\-Centrale}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{construire\-Partie\-Centrale}]{\setlength{\rightskip}{0pt plus 5cm}void Vue\-::construire\-Partie\-Centrale (
+\begin{DoxyParamCaption}
+\item[{Gtk\-::\-V\-Box \&}]{gestionnaire}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_a5020ff24aa99091a71f8b812be8578dc}
+Construit la partie centrale de la fenetre principale contenant le \hyperlink{classgrenouilloland_1_1GrenouillolandGraphique}{Grenouilloland\-Graphique} et le panneau d'affichage des \hyperlink{classgrenouilloland_1_1PointsDeVie}{Points\-De\-Vie}.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in,out}  & {\em gestionnaire} & -\/ le gestionnaire de mise en forme associe a la fenetre principale. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgrenouilloland_1_1Vue_ac2f033ddbd1508798f748e8fb816eb34}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!construire\-Partie\-Inferieure@{construire\-Partie\-Inferieure}}
+\index{construire\-Partie\-Inferieure@{construire\-Partie\-Inferieure}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{construire\-Partie\-Inferieure}]{\setlength{\rightskip}{0pt plus 5cm}void Vue\-::construire\-Partie\-Inferieure (
+\begin{DoxyParamCaption}
+\item[{Gtk\-::\-V\-Box \&}]{gestionnaire}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_ac2f033ddbd1508798f748e8fb816eb34}
+Construit la partie inferieure de la fenetre principale contenant le controleur de la dimension du jeu.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in,out}  & {\em gestionnaire} & -\/ le gestionnaire de mise en forme associe a la fenetre principale. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgrenouilloland_1_1Vue_a6fa4cd2dc80413b819679fdd24ba7e2e}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!deverrouiller@{deverrouiller}}
+\index{deverrouiller@{deverrouiller}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{deverrouiller}]{\setlength{\rightskip}{0pt plus 5cm}void Vue\-::deverrouiller (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_a6fa4cd2dc80413b819679fdd24ba7e2e}
+Deverrouille cette vue. \hypertarget{classgrenouilloland_1_1Vue_afdd453417b5b374129e27d739750d449}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!initialiser@{initialiser}}
+\index{initialiser@{initialiser}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{initialiser}]{\setlength{\rightskip}{0pt plus 5cm}void Vue\-::initialiser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classgrenouilloland_1_1Vue_afdd453417b5b374129e27d739750d449}
+Initialise cette classe.
+
+\begin{DoxyNote}{Note}
+cette methode doit etre appelee avant toute autre. 
+\end{DoxyNote}
+\hypertarget{classgrenouilloland_1_1Vue_a13bd0ca693c418c7b5ee30ac7be56448}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!lire\-Image@{lire\-Image}}
+\index{lire\-Image@{lire\-Image}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{lire\-Image}]{\setlength{\rightskip}{0pt plus 5cm}const Glib\-::\-Ref\-Ptr$<$ Gdk\-::\-Pixbuf $>$ \& Vue\-::lire\-Image (
+\begin{DoxyParamCaption}
+\item[{const Glib\-::ustring \&}]{nom}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_a13bd0ca693c418c7b5ee30ac7be56448}
+Retourne l'image dont le nom est fourni en argument.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em nom} & -\/ le nom de l'image. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+l'image correspondante. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Vue_a9ef1dcf95036a43bec9284168924a653}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!lire\-Presentateur@{lire\-Presentateur}}
+\index{lire\-Presentateur@{lire\-Presentateur}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{lire\-Presentateur}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Presentateur} \& Vue\-::lire\-Presentateur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1Vue_a9ef1dcf95036a43bec9284168924a653}
+Accesseur.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de \hyperlink{classgrenouilloland_1_1Vue_a18b21aec8d74287eb28374399827c022}{\-\_\-ptr\-Presentateur}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Vue_a69daf9edcf49ae15bb1d593f642bde07}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!lire\-Presentateur\-Modifiable@{lire\-Presentateur\-Modifiable}}
+\index{lire\-Presentateur\-Modifiable@{lire\-Presentateur\-Modifiable}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{lire\-Presentateur\-Modifiable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Presentateur} \& Vue\-::lire\-Presentateur\-Modifiable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_a69daf9edcf49ae15bb1d593f642bde07}
+Accesseur.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de \hyperlink{classgrenouilloland_1_1Vue_a18b21aec8d74287eb28374399827c022}{\-\_\-ptr\-Presentateur}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Vue_a88c78d10cc710d33358a3176e26faa51}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!lire\-Titre\-Chronometre@{lire\-Titre\-Chronometre}}
+\index{lire\-Titre\-Chronometre@{lire\-Titre\-Chronometre}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{lire\-Titre\-Chronometre}]{\setlength{\rightskip}{0pt plus 5cm}const Glib\-::ustring Vue\-::lire\-Titre\-Chronometre (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classgrenouilloland_1_1Vue_a88c78d10cc710d33358a3176e26faa51}
+Accesseur.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de \hyperlink{classgrenouilloland_1_1Vue_af6206813ed4886372538752ddbaa746c}{\-\_\-titre\-Chronometre}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Vue_adf5485ae9e2d418cffe7c27d273affa8}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!lire\-Titre\-Dimension@{lire\-Titre\-Dimension}}
+\index{lire\-Titre\-Dimension@{lire\-Titre\-Dimension}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{lire\-Titre\-Dimension}]{\setlength{\rightskip}{0pt plus 5cm}const Glib\-::ustring Vue\-::lire\-Titre\-Dimension (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classgrenouilloland_1_1Vue_adf5485ae9e2d418cffe7c27d273affa8}
+Accesseur.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de \hyperlink{classgrenouilloland_1_1Vue_a233d73dd3c303194933f0da4d3749efe}{\-\_\-titre\-Dimension}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Vue_a1c46be867356f059d3b96b909920963b}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!lire\-Titre\-Grenouilloland@{lire\-Titre\-Grenouilloland}}
+\index{lire\-Titre\-Grenouilloland@{lire\-Titre\-Grenouilloland}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{lire\-Titre\-Grenouilloland}]{\setlength{\rightskip}{0pt plus 5cm}const Glib\-::ustring Vue\-::lire\-Titre\-Grenouilloland (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classgrenouilloland_1_1Vue_a1c46be867356f059d3b96b909920963b}
+Accesseur.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de \hyperlink{classgrenouilloland_1_1Vue_a8f48d405d345306684f25471c377be4b}{\-\_\-titre\-Grenouilloland}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Vue_a36b09d267fb47c48ca326ea88c0e946c}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!lire\-Titre\-Points\-De\-Vie@{lire\-Titre\-Points\-De\-Vie}}
+\index{lire\-Titre\-Points\-De\-Vie@{lire\-Titre\-Points\-De\-Vie}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{lire\-Titre\-Points\-De\-Vie}]{\setlength{\rightskip}{0pt plus 5cm}static const Glib\-::ustring grenouilloland\-::\-Vue\-::lire\-Titre\-Points\-De\-Vie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classgrenouilloland_1_1Vue_a36b09d267fb47c48ca326ea88c0e946c}
+Accesseur.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de \hyperlink{classgrenouilloland_1_1Vue_adc86530a0f01ba959d5dcd48a96f8b95}{\-\_\-titre\-Points\-De\-Vie}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Vue_a223dad39b984bc48648a69cb97b5ff6e}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!lire\-Titre\-Vue@{lire\-Titre\-Vue}}
+\index{lire\-Titre\-Vue@{lire\-Titre\-Vue}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{lire\-Titre\-Vue}]{\setlength{\rightskip}{0pt plus 5cm}const Glib\-::ustring Vue\-::lire\-Titre\-Vue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classgrenouilloland_1_1Vue_a223dad39b984bc48648a69cb97b5ff6e}
+Accesseur.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de \hyperlink{classgrenouilloland_1_1Vue_a5adfea17feebe0674431b82d8215240e}{\-\_\-titre\-Vue}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Vue_a05dde5184e07bb61266e311b5fca58e6}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!mettre\-A\-Jour@{mettre\-A\-Jour}}
+\index{mettre\-A\-Jour@{mettre\-A\-Jour}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{mettre\-A\-Jour}]{\setlength{\rightskip}{0pt plus 5cm}void Vue\-::mettre\-A\-Jour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_a05dde5184e07bb61266e311b5fca58e6}
+Met à jour l'affichage des \hyperlink{classgrenouilloland_1_1PointsDeVie}{Points\-De\-Vie}, l'ensemble des \hyperlink{classgrenouilloland_1_1CaseGraphique}{Case\-Graphique} du \hyperlink{classgrenouilloland_1_1GrenouillolandGraphique}{Grenouilloland\-Graphique} ainsi que le \hyperlink{classgrenouilloland_1_1Chronometre}{Chronometre}. \hypertarget{classgrenouilloland_1_1Vue_a8d220428da4420cdb0bf039c915412ac}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!verrouiller@{verrouiller}}
+\index{verrouiller@{verrouiller}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{verrouiller}]{\setlength{\rightskip}{0pt plus 5cm}void Vue\-::verrouiller (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_a8d220428da4420cdb0bf039c915412ac}
+Verrouille cette vue. 
+
+\subsection{Documentation des fonctions amies et associées}
+\hypertarget{classgrenouilloland_1_1Vue_ac12b0ba9ebe667c8408ac35bf21598e8}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!Case\-Graphique@{Case\-Graphique}}
+\index{Case\-Graphique@{Case\-Graphique}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{Case\-Graphique}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Case\-Graphique}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classgrenouilloland_1_1Vue_ac12b0ba9ebe667c8408ac35bf21598e8}
+Declaration d'amitié. \hypertarget{classgrenouilloland_1_1Vue_aabae1fdc220bf040d4f5c2c057abfcf5}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!Dimension@{Dimension}}
+\index{Dimension@{Dimension}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{Dimension}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Dimension}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classgrenouilloland_1_1Vue_aabae1fdc220bf040d4f5c2c057abfcf5}
+Declaration d'amitié. \hypertarget{classgrenouilloland_1_1Vue_a2f6a9fb1ac6fc3eaae981e0630df21d8}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!Points\-De\-Vie@{Points\-De\-Vie}}
+\index{Points\-De\-Vie@{Points\-De\-Vie}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{Points\-De\-Vie}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Points\-De\-Vie}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classgrenouilloland_1_1Vue_a2f6a9fb1ac6fc3eaae981e0630df21d8}
+Declaration d'amitié. 
+
+\subsection{Documentation des données membres}
+\hypertarget{classgrenouilloland_1_1Vue_a2129d9ff7713d6b8d8c2cd444c6c7344}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!\-\_\-chemin\-Images@{\-\_\-chemin\-Images}}
+\index{\-\_\-chemin\-Images@{\-\_\-chemin\-Images}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{\-\_\-chemin\-Images}]{\setlength{\rightskip}{0pt plus 5cm}const Glib\-::ustring Vue\-::\-\_\-chemin\-Images\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_a2129d9ff7713d6b8d8c2cd444c6c7344}
+Chemins d'acces au répertoire contenant les images. \hypertarget{classgrenouilloland_1_1Vue_a6632cb40512ad2d01c9a52b33de24aeb}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!\-\_\-chronometre@{\-\_\-chronometre}}
+\index{\-\_\-chronometre@{\-\_\-chronometre}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{\-\_\-chronometre}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chronometre} grenouilloland\-::\-Vue\-::\-\_\-chronometre\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_a6632cb40512ad2d01c9a52b33de24aeb}
+Affichage du chronomètre du jeu. \hypertarget{classgrenouilloland_1_1Vue_a8913ac00882895d6a0552edc92266883}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!\-\_\-dimension@{\-\_\-dimension}}
+\index{\-\_\-dimension@{\-\_\-dimension}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{\-\_\-dimension}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dimension} grenouilloland\-::\-Vue\-::\-\_\-dimension\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_a8913ac00882895d6a0552edc92266883}
+Controleur de la dimension du jeu. \hypertarget{classgrenouilloland_1_1Vue_a65d5b3129325746ee1d1dbf0c3f3e0db}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!\-\_\-gestionnaire\-Bas@{\-\_\-gestionnaire\-Bas}}
+\index{\-\_\-gestionnaire\-Bas@{\-\_\-gestionnaire\-Bas}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{\-\_\-gestionnaire\-Bas}]{\setlength{\rightskip}{0pt plus 5cm}Gtk\-::\-H\-Box grenouilloland\-::\-Vue\-::\-\_\-gestionnaire\-Bas\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_a65d5b3129325746ee1d1dbf0c3f3e0db}
+Gestionnaire de la partie inférieure de la fenetre principale contenant \hyperlink{classgrenouilloland_1_1Dimension}{Dimension} et \hyperlink{classgrenouilloland_1_1Chronometre}{Chronometre}. \hypertarget{classgrenouilloland_1_1Vue_a64a3b9c74425f9a70fbae4c5bc7d9c78}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!\-\_\-gestionnaire\-Centre@{\-\_\-gestionnaire\-Centre}}
+\index{\-\_\-gestionnaire\-Centre@{\-\_\-gestionnaire\-Centre}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{\-\_\-gestionnaire\-Centre}]{\setlength{\rightskip}{0pt plus 5cm}Gtk\-::\-H\-Box grenouilloland\-::\-Vue\-::\-\_\-gestionnaire\-Centre\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_a64a3b9c74425f9a70fbae4c5bc7d9c78}
+Gestionnaire de la partie centrale de la fenetre principale contenant \hyperlink{classgrenouilloland_1_1GrenouillolandGraphique}{Grenouilloland\-Graphique} et \hyperlink{classgrenouilloland_1_1PointsDeVie}{Points\-De\-Vie}. \hypertarget{classgrenouilloland_1_1Vue_a1ad2483d0795c038267934208730d415}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!\-\_\-images@{\-\_\-images}}
+\index{\-\_\-images@{\-\_\-images}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{\-\_\-images}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$ Glib\-::ustring, Glib\-::\-Ref\-Ptr$<$ Gdk\-::\-Pixbuf $>$ $>$ Vue\-::\-\_\-images\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_a1ad2483d0795c038267934208730d415}
+Map permettant de stocker les images manipulees par cette vue. \hypertarget{classgrenouilloland_1_1Vue_af6f2bba3b33001e5c0807d8e98c0b0fa}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!\-\_\-points\-De\-Vie@{\-\_\-points\-De\-Vie}}
+\index{\-\_\-points\-De\-Vie@{\-\_\-points\-De\-Vie}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{\-\_\-points\-De\-Vie}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Points\-De\-Vie} grenouilloland\-::\-Vue\-::\-\_\-points\-De\-Vie\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_af6f2bba3b33001e5c0807d8e98c0b0fa}
+Affichage des points de vie de la grenouille. \hypertarget{classgrenouilloland_1_1Vue_a998feee5bed8136f999d2e3484d0c6ca}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!\-\_\-ptr\-Grenouilloland\-Graphique@{\-\_\-ptr\-Grenouilloland\-Graphique}}
+\index{\-\_\-ptr\-Grenouilloland\-Graphique@{\-\_\-ptr\-Grenouilloland\-Graphique}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{\-\_\-ptr\-Grenouilloland\-Graphique}]{\setlength{\rightskip}{0pt plus 5cm}std\-::unique\-\_\-ptr$<$ {\bf Grenouilloland\-Graphique} $>$ grenouilloland\-::\-Vue\-::\-\_\-ptr\-Grenouilloland\-Graphique\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_a998feee5bed8136f999d2e3484d0c6ca}
+Representation graphique du modele. \hypertarget{classgrenouilloland_1_1Vue_a18b21aec8d74287eb28374399827c022}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!\-\_\-ptr\-Presentateur@{\-\_\-ptr\-Presentateur}}
+\index{\-\_\-ptr\-Presentateur@{\-\_\-ptr\-Presentateur}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{\-\_\-ptr\-Presentateur}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Presentateur}$\ast$ const grenouilloland\-::\-Vue\-::\-\_\-ptr\-Presentateur\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_a18b21aec8d74287eb28374399827c022}
+\hyperlink{classgrenouilloland_1_1Presentateur}{Presentateur} unique associe a cette vue. \hypertarget{classgrenouilloland_1_1Vue_af6206813ed4886372538752ddbaa746c}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!\-\_\-titre\-Chronometre@{\-\_\-titre\-Chronometre}}
+\index{\-\_\-titre\-Chronometre@{\-\_\-titre\-Chronometre}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{\-\_\-titre\-Chronometre}]{\setlength{\rightskip}{0pt plus 5cm}const Glib\-::ustring Vue\-::\-\_\-titre\-Chronometre\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_af6206813ed4886372538752ddbaa746c}
+Titre du controleur du chronomètre du jeu. \hypertarget{classgrenouilloland_1_1Vue_a233d73dd3c303194933f0da4d3749efe}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!\-\_\-titre\-Dimension@{\-\_\-titre\-Dimension}}
+\index{\-\_\-titre\-Dimension@{\-\_\-titre\-Dimension}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{\-\_\-titre\-Dimension}]{\setlength{\rightskip}{0pt plus 5cm}const Glib\-::ustring Vue\-::\-\_\-titre\-Dimension\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_a233d73dd3c303194933f0da4d3749efe}
+Titre du controleur de la dimension du jeu. \hypertarget{classgrenouilloland_1_1Vue_a8f48d405d345306684f25471c377be4b}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!\-\_\-titre\-Grenouilloland@{\-\_\-titre\-Grenouilloland}}
+\index{\-\_\-titre\-Grenouilloland@{\-\_\-titre\-Grenouilloland}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{\-\_\-titre\-Grenouilloland}]{\setlength{\rightskip}{0pt plus 5cm}const Glib\-::ustring Vue\-::\-\_\-titre\-Grenouilloland\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_a8f48d405d345306684f25471c377be4b}
+Titre de la representation graphique du jeu grenouilloland. \hypertarget{classgrenouilloland_1_1Vue_adc86530a0f01ba959d5dcd48a96f8b95}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!\-\_\-titre\-Points\-De\-Vie@{\-\_\-titre\-Points\-De\-Vie}}
+\index{\-\_\-titre\-Points\-De\-Vie@{\-\_\-titre\-Points\-De\-Vie}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{\-\_\-titre\-Points\-De\-Vie}]{\setlength{\rightskip}{0pt plus 5cm}const Glib\-::ustring Vue\-::\-\_\-titre\-Points\-De\-Vie\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_adc86530a0f01ba959d5dcd48a96f8b95}
+Titre du panneau de points de vie. \hypertarget{classgrenouilloland_1_1Vue_a5adfea17feebe0674431b82d8215240e}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!\-\_\-titre\-Vue@{\-\_\-titre\-Vue}}
+\index{\-\_\-titre\-Vue@{\-\_\-titre\-Vue}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{\-\_\-titre\-Vue}]{\setlength{\rightskip}{0pt plus 5cm}const Glib\-::ustring Vue\-::\-\_\-titre\-Vue\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_a5adfea17feebe0674431b82d8215240e}
+Titre de cette vue. \hypertarget{classgrenouilloland_1_1Vue_ab6f850d86942bdef050596e90a34494e}{\index{grenouilloland\-::\-Vue@{grenouilloland\-::\-Vue}!\-\_\-verrou@{\-\_\-verrou}}
+\index{\-\_\-verrou@{\-\_\-verrou}!grenouilloland::Vue@{grenouilloland\-::\-Vue}}
+\subsubsection[{\-\_\-verrou}]{\setlength{\rightskip}{0pt plus 5cm}std\-::mutex grenouilloland\-::\-Vue\-::\-\_\-verrou\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Vue_ab6f850d86942bdef050596e90a34494e}
+Verrou associe à cette vue. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+src/vue/include/Vue.\-hh\item 
+src/vue/Vue.\-cpp\end{DoxyCompactItemize}

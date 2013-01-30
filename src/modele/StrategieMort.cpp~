@@ -1,0 +1,10 @@
+#include "include/strategie_mort.hpp"
+
+void StrategieMort::appliquerEffet(unsigned int& pv, bool& malade) const
+{
+	pv = 0;
+}
+
+StrategieMort::StrategieMort()
+{
+}

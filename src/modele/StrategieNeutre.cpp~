@@ -1,0 +1,9 @@
+#include "include/strategie_neutre.hpp"
+
+void StrategieNeutre::appliquerEffet(unsigned int& pv, bool& malade) const
+{
+}
+
+StrategieNeutre::StrategieNeutre()
+{
+}

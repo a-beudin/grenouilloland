@@ -1,0 +1,84 @@
+\hypertarget{classgrenouilloland_1_1StrategieAbstraite}{\section{Référence de la classe grenouilloland\-:\-:Strategie\-Abstraite}
+\label{classgrenouilloland_1_1StrategieAbstraite}\index{grenouilloland\-::\-Strategie\-Abstraite@{grenouilloland\-::\-Strategie\-Abstraite}}
+}
+
+
+\hyperlink{classgrenouilloland_1_1StrategieAbstraite}{Strategie\-Abstraite} du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu} Grenouilloland.  
+
+
+
+
+{\ttfamily \#include $<$Strategie\-Abstraite.\-hh$>$}
+
+
+
+Graphe d'héritage de grenouilloland\-:\-:Strategie\-Abstraite\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgrenouilloland_1_1StrategieAbstraite__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgrenouilloland_1_1StrategieAbstraite_a00d3b038cba36687274e6fec37d28417}{appliquer\-Strategie} (\hyperlink{classgrenouilloland_1_1Grenouille}{Grenouille} \&g) const 
+\item 
+virtual void \hyperlink{classgrenouilloland_1_1StrategieAbstraite_a1355917a007ab0c5e5ed358e2eee93c2}{appliquer\-Effet} (unsigned int \&pv, bool \&malade) const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+\hyperlink{classgrenouilloland_1_1StrategieAbstraite}{Strategie\-Abstraite} du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu} Grenouilloland. 
+
+\begin{DoxyAuthor}{Auteur}
+Beudin.\-Alexandre Dauxais.\-Yann 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+05.\-01.\-2012
+\end{DoxyDate}
+Declaration de la classe abstraite \hyperlink{classgrenouilloland_1_1StrategieAbstraite}{Strategie\-Abstraite} réprésentant la structure d'une stratégie du jeu Grenouilloland. 
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classgrenouilloland_1_1StrategieAbstraite_a1355917a007ab0c5e5ed358e2eee93c2}{\index{grenouilloland\-::\-Strategie\-Abstraite@{grenouilloland\-::\-Strategie\-Abstraite}!appliquer\-Effet@{appliquer\-Effet}}
+\index{appliquer\-Effet@{appliquer\-Effet}!grenouilloland::StrategieAbstraite@{grenouilloland\-::\-Strategie\-Abstraite}}
+\subsubsection[{appliquer\-Effet}]{\setlength{\rightskip}{0pt plus 5cm}virtual void grenouilloland\-::\-Strategie\-Abstraite\-::appliquer\-Effet (
+\begin{DoxyParamCaption}
+\item[{unsigned int \&}]{pv, }
+\item[{bool \&}]{malade}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classgrenouilloland_1_1StrategieAbstraite_a1355917a007ab0c5e5ed358e2eee93c2}
+Application des effets de la stratégie.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in,out}  & {\em pv} & -\/ pv à modifier. \\
+\hline
+\mbox{\tt in,out}  & {\em malade} & -\/ état de santé à modifier. \\
+\hline
+\end{DoxyParams}
+
+
+Implémenté dans \hyperlink{classgrenouilloland_1_1StrategieDopante_a68860bdaf9afa8e4ded568bf56314051}{grenouilloland\-::\-Strategie\-Dopante}, \hyperlink{classgrenouilloland_1_1StrategieMort_aef9dc1d5ce3195c955d9da69af806957}{grenouilloland\-::\-Strategie\-Mort}, \hyperlink{classgrenouilloland_1_1StrategieNeutre_a8e6c41ebe5ed9c0477ad3e203f766567}{grenouilloland\-::\-Strategie\-Neutre}, \hyperlink{classgrenouilloland_1_1StrategieNutritive_aa7338486cae06a62f5f155d72f40ab87}{grenouilloland\-::\-Strategie\-Nutritive}, et \hyperlink{classgrenouilloland_1_1StrategieVeneneuse_a13de8092ed7e5561cf5833693deaf662}{grenouilloland\-::\-Strategie\-Veneneuse}.
+
+\hypertarget{classgrenouilloland_1_1StrategieAbstraite_a00d3b038cba36687274e6fec37d28417}{\index{grenouilloland\-::\-Strategie\-Abstraite@{grenouilloland\-::\-Strategie\-Abstraite}!appliquer\-Strategie@{appliquer\-Strategie}}
+\index{appliquer\-Strategie@{appliquer\-Strategie}!grenouilloland::StrategieAbstraite@{grenouilloland\-::\-Strategie\-Abstraite}}
+\subsubsection[{appliquer\-Strategie}]{\setlength{\rightskip}{0pt plus 5cm}void Strategie\-Abstraite\-::appliquer\-Strategie (
+\begin{DoxyParamCaption}
+\item[{{\bf Grenouille} \&}]{g}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1StrategieAbstraite_a00d3b038cba36687274e6fec37d28417}
+Application de la stratégie sur une grenouille.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in,out}  & {\em g} & -\/ grenouille subissant la stratégie. \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+src/modele/include/Strategie\-Abstraite.\-hh\item 
+src/modele/Strategie\-Abstraite.\-cpp\end{DoxyCompactItemize}

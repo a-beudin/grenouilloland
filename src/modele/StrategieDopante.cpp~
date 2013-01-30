@@ -1,0 +1,11 @@
+#include "include/strategie_dopante.hpp"
+
+void StrategieDopante::appliquerEffet(unsigned int& pv, bool& malade) const
+{
+	pv*=2;
+	malade=false;
+}
+
+StrategieDopante::StrategieDopante()
+{
+}

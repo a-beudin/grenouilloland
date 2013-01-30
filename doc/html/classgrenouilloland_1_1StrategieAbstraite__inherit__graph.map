@@ -1,0 +1,7 @@
+<map id="grenouilloland::StrategieAbstraite" name="grenouilloland::StrategieAbstraite">
+<area shape="rect" id="node3" href="$classgrenouilloland_1_1StrategieDopante.html" title="StrategieDopante du Jeu Grenouilloland." alt="" coords="229,5,389,51"/>
+<area shape="rect" id="node5" href="$classgrenouilloland_1_1StrategieMort.html" title="StrategieMort du Jeu Grenouilloland." alt="" coords="216,75,403,104"/>
+<area shape="rect" id="node7" href="$classgrenouilloland_1_1StrategieNeutre.html" title="StrategieNeutre du Jeu Grenouilloland." alt="" coords="229,127,389,174"/>
+<area shape="rect" id="node9" href="$classgrenouilloland_1_1StrategieNutritive.html" title="StrategieNutritive du Jeu Grenouilloland." alt="" coords="229,197,389,243"/>
+<area shape="rect" id="node11" href="$classgrenouilloland_1_1StrategieVeneneuse.html" title="StrategieVeneneuse du Jeu Grenouilloland." alt="" coords="229,266,389,313"/>
+</map>

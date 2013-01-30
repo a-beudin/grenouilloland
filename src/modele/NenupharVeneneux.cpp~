@@ -1,0 +1,16 @@
+#include "NenupharVeneneux.hh"
+
+NenupharVeneneux::NenupharVeneneux() : ElementMortel(GestStrat<StrategieVeneneuse>::strategie)
+{
+}
+
+NenupharVeneneux::~NenupharVeneneux()
+{
+}
+
+const int&
+NenupharNutritif::lireId() const {
+	return _ID;
+}
+
+const int NenupharVeneneux::_ID(6);

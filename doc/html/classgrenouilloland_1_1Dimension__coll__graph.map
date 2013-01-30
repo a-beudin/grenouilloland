@@ -1,0 +1,6 @@
+<map id="grenouilloland::Dimension" name="grenouilloland::Dimension">
+<area shape="rect" id="node6" href="$classgrenouilloland_1_1Vue.html" title="Vue de l&#39;application." alt="" coords="756,417,887,447"/>
+<area shape="rect" id="node10" href="$classgrenouilloland_1_1Presentateur.html" title="Presentateur de l&#39;application." alt="" coords="356,129,537,159"/>
+<area shape="rect" id="node28" href="$classgrenouilloland_1_1Chronometre.html" title="Afficheur du temps de Jeu." alt="" coords="355,415,539,444"/>
+<area shape="rect" id="node38" href="$classgrenouilloland_1_1PointsDeVie.html" title="Afficheur des points de vie de la Grenouille." alt="" coords="356,468,537,497"/>
+</map>

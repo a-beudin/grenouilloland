@@ -1,0 +1,145 @@
+#ifndef _CaseGraphique_hh
+#define _CaseGraphique_hh
+
+#include <gtkmm/eventbox.h>
+#include <gtkmm/image.h>
+#include <map>
+#include <memory>
+
+namespace grenouilloland {
+
+/**
+ * Declarations incompletes necessaires.
+ */
+class Presentateur;
+class GrenouillolandGraphique;
+
+/**
+ * @class CaseGraphique CaseGraphique.hh 
+ * @brief Representation graphique d'une case.
+ * @author Yann Dauxais
+ * @author Alexandre Beudin
+ * @date 6.1.2013
+ *
+ * Declaration de la classe CaseGraphique representant graphiquement une
+ * case du modele.
+ *
+ * @note Une instance de cette classe ne peut être dupliquée. L'operateur
+ *   d'affectation est naturellement et implicitement retire car deux des
+ *   attributs de cette classe sont des constantes.
+ *
+ * @note Chaque instance de cette classe est son propre listener.
+ */
+class CaseGraphique: public Gtk::EventBox {
+public:
+
+  /**
+   * Declaration d'amitié.
+   */
+  friend class GrenouillolandGraphique;
+
+public:
+
+  /**
+   * Constructeur logique.
+   *
+   * @param[in,out] jeu - la valeur de @ref _ptrGrenouillolandGraphique.
+   * @param[in] ligne - la valeur de @ref _ligne.
+   * @param[in] colonne - la valeur de @ref _colonne.
+   */
+  CaseGraphique(GrenouillolandGraphique& grenouillolandGraphique,
+		   const int& colonne,
+		   const int& ligne);
+
+public:
+
+  /**
+   * Accesseur.
+   *
+   * @return la valeur de @ref _ptrGrenouillolandGraphique.
+   */
+  const GrenouillolandGraphique& lireGrenouillolandGraphique() const;
+
+  /**
+   * Accesseur.
+   *
+   * @return la valeur de @ref _ligne.
+   */
+  const int& lireLigne() const;
+
+  /**
+   * Accesseur.
+   *
+   * @return la valeur de @ref _colonne.
+   */
+  const int& lireColonne() const;
+
+protected:
+
+  /**
+   * Demande a cette case graphique de se mettre a jour en fonction de
+   * l'etat de la case correspondante du modele.
+   * 
+   * @param[in] presentateur - le presentateur a invoquer.
+   *
+   * @note La vue doit etre verrouille pour pouvoir invoquer cette methode.
+   */
+  void mettreAJour(const Presentateur& presentateur);
+
+  /**
+   * Callback invoque lors d'un click de souris sur cette case graphique.
+   *
+   * @param[in] evt - l'evenement associe au click.
+   * @return la valeur @c true.
+   */
+  bool cbClickSouris(GdkEventButton* evt);
+
+private:
+
+  /**
+   * Constructeur par recopie.
+   *
+   * @param[in] autre - l'instance a recopier.
+   */
+  CaseGraphique(const CaseGraphique& autre) = delete;
+
+  /**
+   * Operateur d'affectation.
+   *
+   * @param[in] autre - l'instance a recopier.
+   * @return cette instance apres recopie.
+   */
+  CaseGraphique& operator=(const CaseGraphique& autre) = delete;
+
+protected:
+
+  /**
+   * Unique representation graphique du jeu proprietaire de cette 
+   * case graphique.
+   */
+  GrenouillolandGraphique* const _ptrGrenouillolandGraphique;
+  
+  /**
+   * Numero de ligne de cette case dans le modele.
+   */
+  const int _ligne;
+
+  /**
+   * Numero de colonne de cette case dans le modele.
+   */
+  const int _colonne;
+
+  /**
+   * Pixmaps representant les etats possibles d'une case graphique.
+   *
+   * @note En toute rigueur, cette map devrait etre definie en tant 
+   *   qu'attribut de classe et non d'instance. Cependant, GTK ne supporte pas
+   *   qu'un widget puisse appartenir a plusieurs container. Par consequent,
+   *   nous devons repliquer les images, d'ou un gaspillage de memoire.
+   */
+  std::map< int, std::unique_ptr< Gtk::Image > > _etats;
+
+};
+}
+
+#endif

@@ -1,0 +1,40 @@
+/****************************
+ * Definition de la classe. *
+ ****************************/
+
+#include "Presentateur.hh"
+#include "EtatPartie.hh"
+
+/**************
+ * EtatPartie. *
+ **************/
+
+EtatPartie::EtatPartie(const Glib::ustring& titre, Vue& vue):
+	Gtk::Frame(titre),
+	_imageCoeur(Vue::_cheminImages + "coeur.png"),
+	_labelPv("1"),
+   	_ptrVue(&vue) {
+
+	add(_imageCoeur);
+	add(_labelPv);
+
+}
+
+/************
+ * lireVue. *
+ ************/
+
+const Vue& 
+Chronometre::lireVue() const {
+  return *_ptrVue;
+}
+
+void
+Chronometre::mettreAJour(const Presentateur& presentateur) {
+	const unsigned int pv = _ptrPresentateur->lirePvGrenouille();
+	std::ostringstream convert;
+	convert << pv;
+	_labelPv.set_label(convert.str());
+	if(_ptrPresentateur->grenouilleMalade())
+		_imageCoeur.set(Vue::_cheminImages + "grenouille.gif");
+}

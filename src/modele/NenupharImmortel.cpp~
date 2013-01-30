@@ -1,0 +1,16 @@
+#include "NenupharImmortel.hh"
+
+NenupharImmortel::NenupharImmortel() : Element(GestStrat<StrategieNeutre>::strategie)
+{
+}
+
+NenupharImmortel::~NenupharImmortel()
+{
+}
+
+const int&
+Eau::lireId() const {
+	return _ID;
+}
+
+const int NenupharImmortel::_ID(3);

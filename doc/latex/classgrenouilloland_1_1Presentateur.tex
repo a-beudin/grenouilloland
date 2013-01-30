@@ -1,0 +1,255 @@
+\hypertarget{classgrenouilloland_1_1Presentateur}{\section{Référence de la classe grenouilloland\-:\-:Presentateur}
+\label{classgrenouilloland_1_1Presentateur}\index{grenouilloland\-::\-Presentateur@{grenouilloland\-::\-Presentateur}}
+}
+
+
+\hyperlink{classgrenouilloland_1_1Presentateur}{Presentateur} de l'application.  
+
+
+
+
+{\ttfamily \#include $<$Presentateur.\-hh$>$}
+
+
+
+Graphe de collaboration de grenouilloland\-:\-:Presentateur\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgrenouilloland_1_1Presentateur__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgrenouilloland_1_1Presentateur_1_1MandataireCaseGraphique}{Mandataire\-Case\-Graphique}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classgrenouilloland_1_1Presentateur_1_1MandataireCaseGraphique}{Mandataire\-Case\-Graphique} du \hyperlink{classgrenouilloland_1_1Presentateur}{Presentateur} du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu} Grenouilloland. \end{DoxyCompactList}\item 
+class \hyperlink{classgrenouilloland_1_1Presentateur_1_1MandataireVue}{Mandataire\-Vue}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classgrenouilloland_1_1Presentateur_1_1MandataireVue}{Mandataire\-Vue} du \hyperlink{classgrenouilloland_1_1Presentateur}{Presentateur} du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu} Grenouilloland. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgrenouilloland_1_1Presentateur_aee3b0dd4271204ff0ea084a8851dfc5c}{Presentateur} (const int \&dimension\-Minimum, const int \&dimension\-Maximum, const int \&resolution)
+\item 
+const int \& \hyperlink{classgrenouilloland_1_1Presentateur_ad63992b986dc5e6c072f06c28ad4ef07}{lire\-Dimension\-Minimum} () const 
+\item 
+const int \& \hyperlink{classgrenouilloland_1_1Presentateur_ad9b094d2e8e65893d4bdaf02de8fc133}{lire\-Dimension\-Maximum} () const 
+\item 
+const \hyperlink{classgrenouilloland_1_1Jeu}{Jeu} \& \hyperlink{classgrenouilloland_1_1Presentateur_aecb0257a4af119e65be331478306cdac}{lire\-Modele} () const 
+\item 
+const \hyperlink{classgrenouilloland_1_1Vue}{Vue} \& \hyperlink{classgrenouilloland_1_1Presentateur_a47dc8cbc54d21a96d6a4aefb80b54b8d}{lire\-Vue} () const 
+\item 
+const int \& \hyperlink{classgrenouilloland_1_1Presentateur_a129a00656b36c61645dcc517eb6170b3}{dimension} () const 
+\item 
+void \hyperlink{classgrenouilloland_1_1Presentateur_a965ce165d6b8244e17d81226a5848e2d}{demarrer} ()
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgrenouilloland_1_1Presentateur_afe66f32c7193c158209006bfd8f40627}{lancer\-Partie} ()
+\item 
+void \hyperlink{classgrenouilloland_1_1Presentateur_a37a714909d1e1813a497fa2da716332b}{nouveau\-Modele} (const int \&\hyperlink{classgrenouilloland_1_1Presentateur_a129a00656b36c61645dcc517eb6170b3}{dimension})
+\item 
+bool \hyperlink{classgrenouilloland_1_1Presentateur_aa4463c4fdb04f4852ce8e2ff32b0fe0b}{deplacer\-Grenouille} (const int \&ligne, const int \&colonne)
+\item 
+bool \hyperlink{classgrenouilloland_1_1Presentateur_ab3e69b7a51f4cb235bce31ec168f802c}{vieillissement} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{classgrenouilloland_1_1Presentateur_a94ac9459edd7299793d43196d42575f2}{\-\_\-dimension\-Minimum}
+\item 
+const int \hyperlink{classgrenouilloland_1_1Presentateur_a8d205215e5a4880713eb016dd1266a20}{\-\_\-dimension\-Maximum}
+\item 
+std\-::unique\-\_\-ptr$<$ \hyperlink{classgrenouilloland_1_1Jeu}{Jeu} $>$ \hyperlink{classgrenouilloland_1_1Presentateur_a3418c1b3461d7e4a511ac71bf30d2a14}{\-\_\-ptr\-Modele}
+\item 
+std\-::unique\-\_\-ptr$<$ \hyperlink{classgrenouilloland_1_1Vue}{Vue} $>$ \hyperlink{classgrenouilloland_1_1Presentateur_a806d2e46bff9428800f7b063015b792c}{\-\_\-ptr\-Vue}
+\item 
+sigc\-::connection \hyperlink{classgrenouilloland_1_1Presentateur_adecdbfff3ad277099345f4e768f95e50}{\-\_\-conn}
+\item 
+const sigc\-::slot$<$ bool $>$ \hyperlink{classgrenouilloland_1_1Presentateur_ad51c240a49a31b60bf36578a14860ae8}{\-\_\-vieillissement}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+\hyperlink{classgrenouilloland_1_1Presentateur}{Presentateur} de l'application. 
+
+\begin{DoxyAuthor}{Auteur}
+Yann Dauxais 
+
+Alexandre Beudin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+6.\-1.\-2013
+\end{DoxyDate}
+Declaration de la classe \hyperlink{classgrenouilloland_1_1Presentateur}{Presentateur} representant le presentateur dans le modele d'archiecture graphique M\-V\-P.
+
+\begin{DoxyNote}{Note}
+une instance de cette classe ne peut etre dupliquee. 
+\end{DoxyNote}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{classgrenouilloland_1_1Presentateur_aee3b0dd4271204ff0ea084a8851dfc5c}{\index{grenouilloland\-::\-Presentateur@{grenouilloland\-::\-Presentateur}!Presentateur@{Presentateur}}
+\index{Presentateur@{Presentateur}!grenouilloland::Presentateur@{grenouilloland\-::\-Presentateur}}
+\subsubsection[{Presentateur}]{\setlength{\rightskip}{0pt plus 5cm}Presentateur\-::\-Presentateur (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{dimension\-Minimum, }
+\item[{const int \&}]{dimension\-Maximum, }
+\item[{const int \&}]{resolution}
+\end{DoxyParamCaption}
+)}}\label{classgrenouilloland_1_1Presentateur_aee3b0dd4271204ff0ea084a8851dfc5c}
+Constructeur logique.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em dimension\-Minimum} & -\/ la valeur de \hyperlink{classgrenouilloland_1_1Presentateur_a94ac9459edd7299793d43196d42575f2}{\-\_\-dimension\-Minimum}. \\
+\hline
+\mbox{\tt in}  & {\em dimension\-Maximum} & -\/ la valeur de \hyperlink{classgrenouilloland_1_1Presentateur_a8d205215e5a4880713eb016dd1266a20}{\-\_\-dimension\-Maximum}. \\
+\hline
+\mbox{\tt in}  & {\em dimension} & -\/ la resolution initiale. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classgrenouilloland_1_1Presentateur_a965ce165d6b8244e17d81226a5848e2d}{\index{grenouilloland\-::\-Presentateur@{grenouilloland\-::\-Presentateur}!demarrer@{demarrer}}
+\index{demarrer@{demarrer}!grenouilloland::Presentateur@{grenouilloland\-::\-Presentateur}}
+\subsubsection[{demarrer}]{\setlength{\rightskip}{0pt plus 5cm}void Presentateur\-::demarrer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgrenouilloland_1_1Presentateur_a965ce165d6b8244e17d81226a5848e2d}
+Demarre ce presentateur. \hypertarget{classgrenouilloland_1_1Presentateur_aa4463c4fdb04f4852ce8e2ff32b0fe0b}{\index{grenouilloland\-::\-Presentateur@{grenouilloland\-::\-Presentateur}!deplacer\-Grenouille@{deplacer\-Grenouille}}
+\index{deplacer\-Grenouille@{deplacer\-Grenouille}!grenouilloland::Presentateur@{grenouilloland\-::\-Presentateur}}
+\subsubsection[{deplacer\-Grenouille}]{\setlength{\rightskip}{0pt plus 5cm}bool Presentateur\-::deplacer\-Grenouille (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{ligne, }
+\item[{const int \&}]{colonne}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Presentateur_aa4463c4fdb04f4852ce8e2ff32b0fe0b}
+Déplace la grenouille dans le \hyperlink{classgrenouilloland_1_1Jeu}{Jeu}.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em ligne} & -\/ la ligne souhaitee. \\
+\hline
+\mbox{\tt in}  & {\em colonne} & -\/ la colonne souhaitee. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgrenouilloland_1_1Presentateur_a129a00656b36c61645dcc517eb6170b3}{\index{grenouilloland\-::\-Presentateur@{grenouilloland\-::\-Presentateur}!dimension@{dimension}}
+\index{dimension@{dimension}!grenouilloland::Presentateur@{grenouilloland\-::\-Presentateur}}
+\subsubsection[{dimension}]{\setlength{\rightskip}{0pt plus 5cm}const int \& Presentateur\-::dimension (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1Presentateur_a129a00656b36c61645dcc517eb6170b3}
+Retourne la dimension du modele associe a ce presentateur.
+
+\begin{DoxyReturn}{Renvoie}
+la dimension du modele associe a ce presentateur. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Presentateur_afe66f32c7193c158209006bfd8f40627}{\index{grenouilloland\-::\-Presentateur@{grenouilloland\-::\-Presentateur}!lancer\-Partie@{lancer\-Partie}}
+\index{lancer\-Partie@{lancer\-Partie}!grenouilloland::Presentateur@{grenouilloland\-::\-Presentateur}}
+\subsubsection[{lancer\-Partie}]{\setlength{\rightskip}{0pt plus 5cm}void Presentateur\-::lancer\-Partie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Presentateur_afe66f32c7193c158209006bfd8f40627}
+Lance une nouvelle partie du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu}. \hypertarget{classgrenouilloland_1_1Presentateur_ad9b094d2e8e65893d4bdaf02de8fc133}{\index{grenouilloland\-::\-Presentateur@{grenouilloland\-::\-Presentateur}!lire\-Dimension\-Maximum@{lire\-Dimension\-Maximum}}
+\index{lire\-Dimension\-Maximum@{lire\-Dimension\-Maximum}!grenouilloland::Presentateur@{grenouilloland\-::\-Presentateur}}
+\subsubsection[{lire\-Dimension\-Maximum}]{\setlength{\rightskip}{0pt plus 5cm}const int \& Presentateur\-::lire\-Dimension\-Maximum (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1Presentateur_ad9b094d2e8e65893d4bdaf02de8fc133}
+Accesseur.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de \hyperlink{classgrenouilloland_1_1Presentateur_a8d205215e5a4880713eb016dd1266a20}{\-\_\-dimension\-Maximum}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Presentateur_ad63992b986dc5e6c072f06c28ad4ef07}{\index{grenouilloland\-::\-Presentateur@{grenouilloland\-::\-Presentateur}!lire\-Dimension\-Minimum@{lire\-Dimension\-Minimum}}
+\index{lire\-Dimension\-Minimum@{lire\-Dimension\-Minimum}!grenouilloland::Presentateur@{grenouilloland\-::\-Presentateur}}
+\subsubsection[{lire\-Dimension\-Minimum}]{\setlength{\rightskip}{0pt plus 5cm}const int \& Presentateur\-::lire\-Dimension\-Minimum (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1Presentateur_ad63992b986dc5e6c072f06c28ad4ef07}
+Accesseur.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de \hyperlink{classgrenouilloland_1_1Presentateur_a94ac9459edd7299793d43196d42575f2}{\-\_\-dimension\-Minimum}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Presentateur_aecb0257a4af119e65be331478306cdac}{\index{grenouilloland\-::\-Presentateur@{grenouilloland\-::\-Presentateur}!lire\-Modele@{lire\-Modele}}
+\index{lire\-Modele@{lire\-Modele}!grenouilloland::Presentateur@{grenouilloland\-::\-Presentateur}}
+\subsubsection[{lire\-Modele}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Jeu} \& Presentateur\-::lire\-Modele (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1Presentateur_aecb0257a4af119e65be331478306cdac}
+Accesseur.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de \hyperlink{classgrenouilloland_1_1Presentateur_a3418c1b3461d7e4a511ac71bf30d2a14}{\-\_\-ptr\-Modele}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Presentateur_a47dc8cbc54d21a96d6a4aefb80b54b8d}{\index{grenouilloland\-::\-Presentateur@{grenouilloland\-::\-Presentateur}!lire\-Vue@{lire\-Vue}}
+\index{lire\-Vue@{lire\-Vue}!grenouilloland::Presentateur@{grenouilloland\-::\-Presentateur}}
+\subsubsection[{lire\-Vue}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vue} \& Presentateur\-::lire\-Vue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1Presentateur_a47dc8cbc54d21a96d6a4aefb80b54b8d}
+Accesseur.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de \hyperlink{classgrenouilloland_1_1Presentateur_a806d2e46bff9428800f7b063015b792c}{\-\_\-ptr\-Vue}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Presentateur_a37a714909d1e1813a497fa2da716332b}{\index{grenouilloland\-::\-Presentateur@{grenouilloland\-::\-Presentateur}!nouveau\-Modele@{nouveau\-Modele}}
+\index{nouveau\-Modele@{nouveau\-Modele}!grenouilloland::Presentateur@{grenouilloland\-::\-Presentateur}}
+\subsubsection[{nouveau\-Modele}]{\setlength{\rightskip}{0pt plus 5cm}void Presentateur\-::nouveau\-Modele (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{dimension}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Presentateur_a37a714909d1e1813a497fa2da716332b}
+Change le modele associe a ce presentateur.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em dimension} & -\/ la dimension souhaitee. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgrenouilloland_1_1Presentateur_ab3e69b7a51f4cb235bce31ec168f802c}{\index{grenouilloland\-::\-Presentateur@{grenouilloland\-::\-Presentateur}!vieillissement@{vieillissement}}
+\index{vieillissement@{vieillissement}!grenouilloland::Presentateur@{grenouilloland\-::\-Presentateur}}
+\subsubsection[{vieillissement}]{\setlength{\rightskip}{0pt plus 5cm}bool Presentateur\-::vieillissement (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Presentateur_ab3e69b7a51f4cb235bce31ec168f802c}
+Lance le vieillissement des éléments du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu}. 
+
+\subsection{Documentation des données membres}
+\hypertarget{classgrenouilloland_1_1Presentateur_adecdbfff3ad277099345f4e768f95e50}{\index{grenouilloland\-::\-Presentateur@{grenouilloland\-::\-Presentateur}!\-\_\-conn@{\-\_\-conn}}
+\index{\-\_\-conn@{\-\_\-conn}!grenouilloland::Presentateur@{grenouilloland\-::\-Presentateur}}
+\subsubsection[{\-\_\-conn}]{\setlength{\rightskip}{0pt plus 5cm}sigc\-::connection grenouilloland\-::\-Presentateur\-::\-\_\-conn\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Presentateur_adecdbfff3ad277099345f4e768f95e50}
+Connecteur de slot à un évènement. \hypertarget{classgrenouilloland_1_1Presentateur_a8d205215e5a4880713eb016dd1266a20}{\index{grenouilloland\-::\-Presentateur@{grenouilloland\-::\-Presentateur}!\-\_\-dimension\-Maximum@{\-\_\-dimension\-Maximum}}
+\index{\-\_\-dimension\-Maximum@{\-\_\-dimension\-Maximum}!grenouilloland::Presentateur@{grenouilloland\-::\-Presentateur}}
+\subsubsection[{\-\_\-dimension\-Maximum}]{\setlength{\rightskip}{0pt plus 5cm}const int grenouilloland\-::\-Presentateur\-::\-\_\-dimension\-Maximum\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Presentateur_a8d205215e5a4880713eb016dd1266a20}
+\hyperlink{classgrenouilloland_1_1Dimension}{Dimension} maximum du modele. \hypertarget{classgrenouilloland_1_1Presentateur_a94ac9459edd7299793d43196d42575f2}{\index{grenouilloland\-::\-Presentateur@{grenouilloland\-::\-Presentateur}!\-\_\-dimension\-Minimum@{\-\_\-dimension\-Minimum}}
+\index{\-\_\-dimension\-Minimum@{\-\_\-dimension\-Minimum}!grenouilloland::Presentateur@{grenouilloland\-::\-Presentateur}}
+\subsubsection[{\-\_\-dimension\-Minimum}]{\setlength{\rightskip}{0pt plus 5cm}const int grenouilloland\-::\-Presentateur\-::\-\_\-dimension\-Minimum\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Presentateur_a94ac9459edd7299793d43196d42575f2}
+\hyperlink{classgrenouilloland_1_1Dimension}{Dimension} minimum du modele. \hypertarget{classgrenouilloland_1_1Presentateur_a3418c1b3461d7e4a511ac71bf30d2a14}{\index{grenouilloland\-::\-Presentateur@{grenouilloland\-::\-Presentateur}!\-\_\-ptr\-Modele@{\-\_\-ptr\-Modele}}
+\index{\-\_\-ptr\-Modele@{\-\_\-ptr\-Modele}!grenouilloland::Presentateur@{grenouilloland\-::\-Presentateur}}
+\subsubsection[{\-\_\-ptr\-Modele}]{\setlength{\rightskip}{0pt plus 5cm}std\-::unique\-\_\-ptr$<$ {\bf Jeu} $>$ grenouilloland\-::\-Presentateur\-::\-\_\-ptr\-Modele\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Presentateur_a3418c1b3461d7e4a511ac71bf30d2a14}
+Modele associe a ce presentateur. \hypertarget{classgrenouilloland_1_1Presentateur_a806d2e46bff9428800f7b063015b792c}{\index{grenouilloland\-::\-Presentateur@{grenouilloland\-::\-Presentateur}!\-\_\-ptr\-Vue@{\-\_\-ptr\-Vue}}
+\index{\-\_\-ptr\-Vue@{\-\_\-ptr\-Vue}!grenouilloland::Presentateur@{grenouilloland\-::\-Presentateur}}
+\subsubsection[{\-\_\-ptr\-Vue}]{\setlength{\rightskip}{0pt plus 5cm}std\-::unique\-\_\-ptr$<$ {\bf Vue} $>$ grenouilloland\-::\-Presentateur\-::\-\_\-ptr\-Vue\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Presentateur_a806d2e46bff9428800f7b063015b792c}
+\hyperlink{classgrenouilloland_1_1Vue}{Vue} associee a ce presentateur. \hypertarget{classgrenouilloland_1_1Presentateur_ad51c240a49a31b60bf36578a14860ae8}{\index{grenouilloland\-::\-Presentateur@{grenouilloland\-::\-Presentateur}!\-\_\-vieillissement@{\-\_\-vieillissement}}
+\index{\-\_\-vieillissement@{\-\_\-vieillissement}!grenouilloland::Presentateur@{grenouilloland\-::\-Presentateur}}
+\subsubsection[{\-\_\-vieillissement}]{\setlength{\rightskip}{0pt plus 5cm}const sigc\-::slot$<$bool$>$ grenouilloland\-::\-Presentateur\-::\-\_\-vieillissement\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Presentateur_ad51c240a49a31b60bf36578a14860ae8}
+Slot qui sera attaché à la méthode vieillissement. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+src/presentateur/include/Presentateur.\-hh\item 
+src/presentateur/Presentateur.\-cpp\end{DoxyCompactItemize}

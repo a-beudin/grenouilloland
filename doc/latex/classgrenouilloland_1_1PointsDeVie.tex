@@ -1,0 +1,129 @@
+\hypertarget{classgrenouilloland_1_1PointsDeVie}{\section{Référence de la classe grenouilloland\-:\-:Points\-De\-Vie}
+\label{classgrenouilloland_1_1PointsDeVie}\index{grenouilloland\-::\-Points\-De\-Vie@{grenouilloland\-::\-Points\-De\-Vie}}
+}
+
+
+Afficheur des points de vie de la \hyperlink{classgrenouilloland_1_1Grenouille}{Grenouille}.  
+
+
+
+
+{\ttfamily \#include $<$Points\-De\-Vie.\-hh$>$}
+
+
+
+Graphe d'héritage de grenouilloland\-:\-:Points\-De\-Vie\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classgrenouilloland_1_1PointsDeVie__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de grenouilloland\-:\-:Points\-De\-Vie\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{classgrenouilloland_1_1PointsDeVie__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgrenouilloland_1_1PointsDeVie_a2e7343a93c85f829b632882f015cd683}{Points\-De\-Vie} (const Glib\-::ustring \&titre)
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgrenouilloland_1_1PointsDeVie_a6fdc129a1d93e85ffae0f0ab948ce2ae}{mettre\-A\-Jour} (const \hyperlink{classgrenouilloland_1_1Presentateur}{Presentateur} \&presentateur)
+\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+Gtk\-::\-Image \hyperlink{classgrenouilloland_1_1PointsDeVie_a154df2e799b244ec1d0374af4297eb5d}{\-\_\-image\-Coeur}
+\item 
+Gtk\-::\-Label \hyperlink{classgrenouilloland_1_1PointsDeVie_a6b7f96b9a6eca2629c76ef30598c7b7b}{\-\_\-label\-Pv}
+\end{DoxyCompactItemize}
+\subsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgrenouilloland_1_1PointsDeVie_adc3b1810b8d3988a7832f57c330fe4fd}{Vue}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Afficheur des points de vie de la \hyperlink{classgrenouilloland_1_1Grenouille}{Grenouille}. 
+
+\begin{DoxyAuthor}{Auteur}
+Yann Dauxais 
+
+Alexandre Beudin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+6.\-1.\-2013
+\end{DoxyDate}
+Declaration de la classe \hyperlink{classgrenouilloland_1_1PointsDeVie}{Points\-De\-Vie} representant l'affichage des \hyperlink{classgrenouilloland_1_1PointsDeVie}{Points\-De\-Vie} et de la santé de la \hyperlink{classgrenouilloland_1_1Grenouille}{Grenouille}. Les Widget utilisés sont un label et une image.
+
+\begin{DoxyNote}{Note}
+une instance de cette classe ne peut etre dupliquee.
+
+chaque instance de cette classe est son propre listener. 
+\end{DoxyNote}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{classgrenouilloland_1_1PointsDeVie_a2e7343a93c85f829b632882f015cd683}{\index{grenouilloland\-::\-Points\-De\-Vie@{grenouilloland\-::\-Points\-De\-Vie}!Points\-De\-Vie@{Points\-De\-Vie}}
+\index{Points\-De\-Vie@{Points\-De\-Vie}!grenouilloland::PointsDeVie@{grenouilloland\-::\-Points\-De\-Vie}}
+\subsubsection[{Points\-De\-Vie}]{\setlength{\rightskip}{0pt plus 5cm}Points\-De\-Vie\-::\-Points\-De\-Vie (
+\begin{DoxyParamCaption}
+\item[{const Glib\-::ustring \&}]{titre}
+\end{DoxyParamCaption}
+)}}\label{classgrenouilloland_1_1PointsDeVie_a2e7343a93c85f829b632882f015cd683}
+Constructeur logique.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em titre} & -\/ le titre du contour. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classgrenouilloland_1_1PointsDeVie_a6fdc129a1d93e85ffae0f0ab948ce2ae}{\index{grenouilloland\-::\-Points\-De\-Vie@{grenouilloland\-::\-Points\-De\-Vie}!mettre\-A\-Jour@{mettre\-A\-Jour}}
+\index{mettre\-A\-Jour@{mettre\-A\-Jour}!grenouilloland::PointsDeVie@{grenouilloland\-::\-Points\-De\-Vie}}
+\subsubsection[{mettre\-A\-Jour}]{\setlength{\rightskip}{0pt plus 5cm}void Points\-De\-Vie\-::mettre\-A\-Jour (
+\begin{DoxyParamCaption}
+\item[{const {\bf Presentateur} \&}]{presentateur}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1PointsDeVie_a6fdc129a1d93e85ffae0f0ab948ce2ae}
+Met à jour l'image et le label selon l'état de la \hyperlink{classgrenouilloland_1_1Grenouille}{Grenouille} et son nombre de points de vie.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em presentateur} & -\/ le \hyperlink{classgrenouilloland_1_1Presentateur}{Presentateur} à invoquer. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions amies et associées}
+\hypertarget{classgrenouilloland_1_1PointsDeVie_adc3b1810b8d3988a7832f57c330fe4fd}{\index{grenouilloland\-::\-Points\-De\-Vie@{grenouilloland\-::\-Points\-De\-Vie}!Vue@{Vue}}
+\index{Vue@{Vue}!grenouilloland::PointsDeVie@{grenouilloland\-::\-Points\-De\-Vie}}
+\subsubsection[{Vue}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Vue}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classgrenouilloland_1_1PointsDeVie_adc3b1810b8d3988a7832f57c330fe4fd}
+Declaration d'amitié. 
+
+\subsection{Documentation des données membres}
+\hypertarget{classgrenouilloland_1_1PointsDeVie_a154df2e799b244ec1d0374af4297eb5d}{\index{grenouilloland\-::\-Points\-De\-Vie@{grenouilloland\-::\-Points\-De\-Vie}!\-\_\-image\-Coeur@{\-\_\-image\-Coeur}}
+\index{\-\_\-image\-Coeur@{\-\_\-image\-Coeur}!grenouilloland::PointsDeVie@{grenouilloland\-::\-Points\-De\-Vie}}
+\subsubsection[{\-\_\-image\-Coeur}]{\setlength{\rightskip}{0pt plus 5cm}Gtk\-::\-Image grenouilloland\-::\-Points\-De\-Vie\-::\-\_\-image\-Coeur\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1PointsDeVie_a154df2e799b244ec1d0374af4297eb5d}
+Image. \hypertarget{classgrenouilloland_1_1PointsDeVie_a6b7f96b9a6eca2629c76ef30598c7b7b}{\index{grenouilloland\-::\-Points\-De\-Vie@{grenouilloland\-::\-Points\-De\-Vie}!\-\_\-label\-Pv@{\-\_\-label\-Pv}}
+\index{\-\_\-label\-Pv@{\-\_\-label\-Pv}!grenouilloland::PointsDeVie@{grenouilloland\-::\-Points\-De\-Vie}}
+\subsubsection[{\-\_\-label\-Pv}]{\setlength{\rightskip}{0pt plus 5cm}Gtk\-::\-Label grenouilloland\-::\-Points\-De\-Vie\-::\-\_\-label\-Pv\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1PointsDeVie_a6b7f96b9a6eca2629c76ef30598c7b7b}
+Label. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+src/vue/include/Points\-De\-Vie.\-hh\item 
+src/vue/Points\-De\-Vie.\-cpp\end{DoxyCompactItemize}

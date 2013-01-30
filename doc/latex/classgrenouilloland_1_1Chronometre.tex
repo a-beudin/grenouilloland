@@ -1,0 +1,124 @@
+\hypertarget{classgrenouilloland_1_1Chronometre}{\section{Référence de la classe grenouilloland\-:\-:Chronometre}
+\label{classgrenouilloland_1_1Chronometre}\index{grenouilloland\-::\-Chronometre@{grenouilloland\-::\-Chronometre}}
+}
+
+
+Afficheur du temps de \hyperlink{classgrenouilloland_1_1Jeu}{Jeu}.  
+
+
+
+
+{\ttfamily \#include $<$Chronometre.\-hh$>$}
+
+
+
+Graphe d'héritage de grenouilloland\-:\-:Chronometre\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{classgrenouilloland_1_1Chronometre__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de grenouilloland\-:\-:Chronometre\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{classgrenouilloland_1_1Chronometre__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgrenouilloland_1_1Chronometre_a7331d6bd863468b99f501c9ef72f3d18}{Chronometre} (const Glib\-::ustring \&titre)
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgrenouilloland_1_1Chronometre_ac7b8f9ef96571fdda6f3a328aec1db8d}{mettre\-A\-Jour} (const \hyperlink{classgrenouilloland_1_1Presentateur}{Presentateur} \&presentateur)
+\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+Gtk\-::\-Progress\-Bar \hyperlink{classgrenouilloland_1_1Chronometre_a0d69d261d1caf45e33f310cbc3132d6d}{\-\_\-barre\-De\-Progression}
+\end{DoxyCompactItemize}
+\subsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgrenouilloland_1_1Chronometre_adc3b1810b8d3988a7832f57c330fe4fd}{Vue}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Afficheur du temps de \hyperlink{classgrenouilloland_1_1Jeu}{Jeu}. 
+
+\begin{DoxyAuthor}{Auteur}
+Yann Dauxais 
+
+Alexandre Beudin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+6.\-1.\-2013
+\end{DoxyDate}
+Declaration de la classe \hyperlink{classgrenouilloland_1_1Chronometre}{Chronometre} representant l'affichage du chronomètre du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu}. Le Widget utilisé est une barre de progression.
+
+\begin{DoxyNote}{Note}
+une instance de cette classe ne peut etre dupliquee.
+
+chaque instance de cette classe est son propre listener. 
+\end{DoxyNote}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{classgrenouilloland_1_1Chronometre_a7331d6bd863468b99f501c9ef72f3d18}{\index{grenouilloland\-::\-Chronometre@{grenouilloland\-::\-Chronometre}!Chronometre@{Chronometre}}
+\index{Chronometre@{Chronometre}!grenouilloland::Chronometre@{grenouilloland\-::\-Chronometre}}
+\subsubsection[{Chronometre}]{\setlength{\rightskip}{0pt plus 5cm}Chronometre\-::\-Chronometre (
+\begin{DoxyParamCaption}
+\item[{const Glib\-::ustring \&}]{titre}
+\end{DoxyParamCaption}
+)}}\label{classgrenouilloland_1_1Chronometre_a7331d6bd863468b99f501c9ef72f3d18}
+Constructeur logique.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em titre} & -\/ le titre du contour. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classgrenouilloland_1_1Chronometre_ac7b8f9ef96571fdda6f3a328aec1db8d}{\index{grenouilloland\-::\-Chronometre@{grenouilloland\-::\-Chronometre}!mettre\-A\-Jour@{mettre\-A\-Jour}}
+\index{mettre\-A\-Jour@{mettre\-A\-Jour}!grenouilloland::Chronometre@{grenouilloland\-::\-Chronometre}}
+\subsubsection[{mettre\-A\-Jour}]{\setlength{\rightskip}{0pt plus 5cm}void Chronometre\-::mettre\-A\-Jour (
+\begin{DoxyParamCaption}
+\item[{const {\bf Presentateur} \&}]{presentateur}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Chronometre_ac7b8f9ef96571fdda6f3a328aec1db8d}
+Met à jour la barre de progression selon le chronomètre du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu}.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em presentateur} & -\/ le \hyperlink{classgrenouilloland_1_1Presentateur}{Presentateur} à invoquer. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions amies et associées}
+\hypertarget{classgrenouilloland_1_1Chronometre_adc3b1810b8d3988a7832f57c330fe4fd}{\index{grenouilloland\-::\-Chronometre@{grenouilloland\-::\-Chronometre}!Vue@{Vue}}
+\index{Vue@{Vue}!grenouilloland::Chronometre@{grenouilloland\-::\-Chronometre}}
+\subsubsection[{Vue}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Vue}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classgrenouilloland_1_1Chronometre_adc3b1810b8d3988a7832f57c330fe4fd}
+Declaration d'amitie. 
+
+\subsection{Documentation des données membres}
+\hypertarget{classgrenouilloland_1_1Chronometre_a0d69d261d1caf45e33f310cbc3132d6d}{\index{grenouilloland\-::\-Chronometre@{grenouilloland\-::\-Chronometre}!\-\_\-barre\-De\-Progression@{\-\_\-barre\-De\-Progression}}
+\index{\-\_\-barre\-De\-Progression@{\-\_\-barre\-De\-Progression}!grenouilloland::Chronometre@{grenouilloland\-::\-Chronometre}}
+\subsubsection[{\-\_\-barre\-De\-Progression}]{\setlength{\rightskip}{0pt plus 5cm}Gtk\-::\-Progress\-Bar grenouilloland\-::\-Chronometre\-::\-\_\-barre\-De\-Progression\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Chronometre_a0d69d261d1caf45e33f310cbc3132d6d}
+Barre de progression. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+src/vue/include/Chronometre.\-hh\item 
+src/vue/Chronometre.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3"/>
+<title>Grenouilloland:  Fichier source de src/presentateur/include/Presentateur.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="grenouille.gif"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Grenouilloland
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.3 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Amis</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ae8b50a5d614f111853ec87eff7d06af.html">presentateur</a></li><li class="navelem"><a class="el" href="dir_100378e5bc53ef2d5e27edf2daa78ad5.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Presentateur.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _Presentateur_hh</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _Presentateur_hh</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Jeu.hh&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;Vue.hh&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>grenouilloland {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="classgrenouilloland_1_1Presentateur.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classgrenouilloland_1_1Presentateur.html" title="Presentateur de l&#39;application.">Presentateur</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="classgrenouilloland_1_1Presentateur.html#aee3b0dd4271204ff0ea084a8851dfc5c">Presentateur</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; dimensionMinimum, </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; dimensionMaximum,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; resolution);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; <a class="code" href="classgrenouilloland_1_1Presentateur.html#ad63992b986dc5e6c072f06c28ad4ef07">lireDimensionMinimum</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; <a class="code" href="classgrenouilloland_1_1Presentateur.html#ad9b094d2e8e65893d4bdaf02de8fc133">lireDimensionMaximum</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">const</span> <a class="code" href="classgrenouilloland_1_1Jeu.html" title="Jeu du Jeu Grenouilloland.">Jeu</a>&amp; <a class="code" href="classgrenouilloland_1_1Presentateur.html#aecb0257a4af119e65be331478306cdac">lireModele</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">const</span> <a class="code" href="classgrenouilloland_1_1Vue.html" title="Vue de l&#39;application.">Vue</a>&amp; <a class="code" href="classgrenouilloland_1_1Presentateur.html#a47dc8cbc54d21a96d6a4aefb80b54b8d">lireVue</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; <a class="code" href="classgrenouilloland_1_1Presentateur.html#a129a00656b36c61645dcc517eb6170b3">dimension</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgrenouilloland_1_1Presentateur.html#a965ce165d6b8244e17d81226a5848e2d">demarrer</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgrenouilloland_1_1Presentateur.html#afe66f32c7193c158209006bfd8f40627">lancerPartie</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgrenouilloland_1_1Presentateur.html#a37a714909d1e1813a497fa2da716332b">nouveauModele</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; dimension);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classgrenouilloland_1_1Presentateur.html#aa4463c4fdb04f4852ce8e2ff32b0fe0b">deplacerGrenouille</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; ligne, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; colonne);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classgrenouilloland_1_1Presentateur.html#ab3e69b7a51f4cb235bce31ec168f802c">vieillissement</a>();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <a class="code" href="classgrenouilloland_1_1Presentateur.html#aee3b0dd4271204ff0ea084a8851dfc5c">Presentateur</a>(<span class="keyword">const</span> <a class="code" href="classgrenouilloland_1_1Presentateur.html" title="Presentateur de l&#39;application.">Presentateur</a>&amp; autre) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <a class="code" href="classgrenouilloland_1_1Presentateur.html" title="Presentateur de l&#39;application.">Presentateur</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classgrenouilloland_1_1Presentateur.html" title="Presentateur de l&#39;application.">Presentateur</a>&amp; autre) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="code" href="classgrenouilloland_1_1Presentateur.html#a94ac9459edd7299793d43196d42575f2">  127</a></span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classgrenouilloland_1_1Presentateur.html#a94ac9459edd7299793d43196d42575f2">_dimensionMinimum</a>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="code" href="classgrenouilloland_1_1Presentateur.html#a8d205215e5a4880713eb016dd1266a20">  132</a></span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classgrenouilloland_1_1Presentateur.html#a8d205215e5a4880713eb016dd1266a20">_dimensionMaximum</a>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="code" href="classgrenouilloland_1_1Presentateur.html#a3418c1b3461d7e4a511ac71bf30d2a14">  137</a></span>&#160;  std::unique_ptr&lt; Jeu &gt; <a class="code" href="classgrenouilloland_1_1Presentateur.html#a3418c1b3461d7e4a511ac71bf30d2a14">_ptrModele</a>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="code" href="classgrenouilloland_1_1Presentateur.html#a806d2e46bff9428800f7b063015b792c">  142</a></span>&#160;  std::unique_ptr&lt; Vue &gt; <a class="code" href="classgrenouilloland_1_1Presentateur.html#a806d2e46bff9428800f7b063015b792c">_ptrVue</a>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  </div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="code" href="classgrenouilloland_1_1Presentateur.html#adecdbfff3ad277099345f4e768f95e50">  147</a></span>&#160;  sigc::connection <a class="code" href="classgrenouilloland_1_1Presentateur.html#adecdbfff3ad277099345f4e768f95e50">_conn</a>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  </div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="code" href="classgrenouilloland_1_1Presentateur.html#ad51c240a49a31b60bf36578a14860ae8">  152</a></span>&#160;  <span class="keyword">const</span> sigc::slot&lt;bool&gt; <a class="code" href="classgrenouilloland_1_1Presentateur.html#ad51c240a49a31b60bf36578a14860ae8">_vieillissement</a>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    </div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="code" href="classgrenouilloland_1_1Presentateur_1_1MandataireVue.html">  163</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classgrenouilloland_1_1Presentateur_1_1MandataireVue.html" title="MandataireVue du Presentateur du Jeu Grenouilloland.">MandataireVue</a></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    {</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keyword">public</span> :</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classgrenouilloland_1_1Vue.html" title="Vue de l&#39;application.">Vue</a>;       </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keyword">private</span> :</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> lancerPartie(<a class="code" href="classgrenouilloland_1_1Presentateur.html" title="Presentateur de l&#39;application.">Presentateur</a>&amp; presentateur)</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                presentateur.<a class="code" href="classgrenouilloland_1_1Presentateur.html#afe66f32c7193c158209006bfd8f40627">lancerPartie</a>();</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> nouveauModele(<a class="code" href="classgrenouilloland_1_1Presentateur.html" title="Presentateur de l&#39;application.">Presentateur</a>&amp; presentateur, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; dimension)</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                presentateur.<a class="code" href="classgrenouilloland_1_1Presentateur.html#a37a714909d1e1813a497fa2da716332b">nouveauModele</a>(dimension);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    };</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno"><a class="code" href="classgrenouilloland_1_1Presentateur_1_1MandataireCaseGraphique.html">  190</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classgrenouilloland_1_1Presentateur_1_1MandataireCaseGraphique.html" title="MandataireCaseGraphique du Presentateur du Jeu Grenouilloland.">MandataireCaseGraphique</a></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keyword">public</span> :</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classgrenouilloland_1_1CaseGraphique.html" title="Representation graphique d&#39;une Case.">CaseGraphique</a>;     </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keyword">private</span> :</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">bool</span> deplacerGrenouille(<a class="code" href="classgrenouilloland_1_1Presentateur.html" title="Presentateur de l&#39;application.">Presentateur</a>&amp; presentateur, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; ligne, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; colonne)</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                <span class="keywordflow">return</span> presentateur.<a class="code" href="classgrenouilloland_1_1Presentateur.html#aa4463c4fdb04f4852ce8e2ff32b0fe0b">deplacerGrenouille</a>(ligne, colonne);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    };</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;};</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Lundi Janvier 7 2013 14:49:49 pour Grenouilloland par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.3
+</small></address>
+</body>
+</html>

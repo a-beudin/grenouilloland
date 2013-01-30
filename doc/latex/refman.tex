@@ -1,0 +1,114 @@
+\documentclass{book}
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage{makeidx}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{sectsty}
+\usepackage{amssymb}
+\usepackage[titles]{tocloft}
+\usepackage{doxygen}
+\lstset{language=C++,inputencoding=utf8,basicstyle=\footnotesize,breaklines=true,breakatwhitespace=true,tabsize=4,numbers=left }
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\familydefault}{\sfdefault}
+\hfuzz=15pt
+\setlength{\emergencystretch}{15pt}
+\hbadness=750
+\tolerance=750
+\begin{document}
+\hypersetup{pageanchor=false,citecolor=blue}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large Grenouilloland \\[1ex]\large 1.\-0 }\\
+\vspace*{1cm}
+{\large Généré par Doxygen 1.8.3}\\
+\vspace*{0.5cm}
+{\small Lundi Janvier 7 2013 14:49:49}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true,citecolor=blue}
+\chapter{Index hiérarchique}
+\input{hierarchy}
+\chapter{Index des classes}
+\input{annotated}
+\chapter{Documentation des classes}
+\input{classgrenouilloland_1_1Case}
+\input{classgrenouilloland_1_1CaseGraphique}
+\input{classgrenouilloland_1_1Chronometre}
+\input{classgrenouilloland_1_1Dimension}
+\input{classgrenouilloland_1_1Eau}
+\input{classgrenouilloland_1_1Element}
+\input{classgrenouilloland_1_1ElementMortel}
+\input{classgrenouilloland_1_1Etat}
+\input{classgrenouilloland_1_1GestStrat}
+\input{classgrenouilloland_1_1Grenouille}
+\input{classgrenouilloland_1_1GrenouillolandGraphique}
+\input{classgrenouilloland_1_1Jeu}
+\input{classgrenouilloland_1_1StrategieDopante_1_1Mandataire}
+\input{classgrenouilloland_1_1Element_1_1Mandataire}
+\input{classgrenouilloland_1_1Vue_1_1Mandataire}
+\input{classgrenouilloland_1_1Jeu_1_1Mandataire}
+\input{classgrenouilloland_1_1StrategieMort_1_1Mandataire}
+\input{classgrenouilloland_1_1StrategieNeutre_1_1Mandataire}
+\input{classgrenouilloland_1_1StrategieNutritive_1_1Mandataire}
+\input{classgrenouilloland_1_1StrategieVeneneuse_1_1Mandataire}
+\input{classgrenouilloland_1_1Presentateur_1_1MandataireCaseGraphique}
+\input{classgrenouilloland_1_1Grenouille_1_1MandataireEtat}
+\input{classgrenouilloland_1_1Grenouille_1_1MandatairePosition}
+\input{classgrenouilloland_1_1Presentateur_1_1MandataireVue}
+\input{classgrenouilloland_1_1Nenuphar}
+\input{classgrenouilloland_1_1NenupharDopant}
+\input{classgrenouilloland_1_1NenupharImmortel}
+\input{classgrenouilloland_1_1NenupharMortel}
+\input{classgrenouilloland_1_1NenupharNutritif}
+\input{classgrenouilloland_1_1NenupharVeneneux}
+\input{classgrenouilloland_1_1PointsDeVie}
+\input{classgrenouilloland_1_1Presentateur}
+\input{classgrenouilloland_1_1StrategieAbstraite}
+\input{classgrenouilloland_1_1StrategieDopante}
+\input{classgrenouilloland_1_1StrategieMort}
+\input{classgrenouilloland_1_1StrategieNeutre}
+\input{classgrenouilloland_1_1StrategieNutritive}
+\input{classgrenouilloland_1_1StrategieVeneneuse}
+\input{classgrenouilloland_1_1Vue}
+\addcontentsline{toc}{part}{Index}
+\printindex
+\end{document}

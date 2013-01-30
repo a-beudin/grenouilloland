@@ -1,0 +1,97 @@
+#ifndef __Dimension_hh
+#define __Dimension_hh
+
+#include <gtkmm/comboboxtext.h>
+#include <gtkmm/liststore.h>
+
+namespace grenouilloland {
+
+/**
+ * Declarations incompletes necessaires.
+ */
+class Vue;
+
+/**
+ * @class Dimension Dimension.hh
+ * @brief Controleur de la dimension du Jeu.
+ * @author Yann Dauxais
+ * @author Alexandre Beudin
+ * @date 7.1.2013
+ *
+ * Declaration de la classe Dimension representant le controleur
+ * de dimension du Jeu. Le Widget utilisé est un menu déroulant.
+ *
+ * @note une instance de cette classe ne peut etre dupliquee.
+ * 
+ * @note chaque instance de cette classe est son propre listener.
+ */
+
+class Dimension: public Gtk::Frame {
+public:
+
+  /**
+   * Constructeur logique.
+   *
+   * @param[in] titre - le titre du contour.
+   * @param[in,out] vue - la valeur de @ref _ptrVue.
+   */
+  Dimension(const Glib::ustring& titre, Vue& vue);
+
+public:
+
+  /**
+   * Accesseur.
+   *
+   * @return la valeur de @ref _ptrVue.
+   */
+  const Vue& lireVue() const;
+
+public:
+
+  /**
+   * Retourne la dimension actuelle.
+   *
+   * @return la dimension actuelle.
+   */
+  int valeur() const;
+
+protected:
+
+  /**
+   * Callback associe au changement de valeur.
+   */
+  void cbChangementDeValeur();
+
+private:
+
+  /**
+   * Constructeur par recopie.
+   *
+   * @param[in] autre - l'instance à recopier.
+   */
+  Dimension(const Dimension& autre) = delete;
+
+  /**
+   * Operateur d'affectation.
+   *
+   * @param[in] autre - l'instance à recopier.
+   * @return cette instance apres recopie.
+   */
+  Dimension& operator=(const Dimension& autre) = delete;
+
+protected:
+
+  /**
+   * Unique vue proprietaire de ce controleur.
+   */
+  Vue* const _ptrVue;
+
+  /**
+   * Menu déroulant.
+   */
+  Gtk::ComboBoxText _listeDimension;
+
+};
+}
+
+#endif

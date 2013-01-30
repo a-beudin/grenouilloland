@@ -1,0 +1,58 @@
+#ifndef _EtatPartie_hh
+#define _EtatPartie_hh
+
+#include <gtkmm/frame.h>
+
+/**
+ * Declarations incompletes necessaires.
+ */
+class Vue;
+
+class EtatPartie: public Gtk::Frame {
+
+	public:
+	
+		EtatPartie(const Glib::ustring& titre, Vue& vue);	
+
+	public:
+
+  		/**
+   		* Accesseur.
+   		*
+   		* @return la valeur de @ref _ptrVue.
+   		*/
+  		const Vue& lireVue() const;
+
+  		void mettreAJour(const Presentateur& presentateur);
+
+	private:
+
+  		/**
+   		* Constructeur par recopie.
+   		*
+   		* @param[in] autre - l'instance à recopier.
+   		*/
+  		EtatPartie(const EtatPartie& autre) = delete;
+
+  		/**
+   		* Operateur d'affectation.
+   		*
+   		* @param[in] autre - l'instance à recopier.
+   		* @return cette instance apres recopie.
+   		*/
+  		EtatPartie& operator=(const EtatPartie& autre) = delete;
+
+	protected:
+
+  		/**
+   		* Unique vue proprietaire de ce controleur.
+   		*/
+  		Vue* const _ptrVue;
+
+		Gtk::Image _imageCoeur;
+
+		Gtk::Label _labelPv;
+
+};
+
+#endif

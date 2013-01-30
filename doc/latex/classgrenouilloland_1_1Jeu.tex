@@ -1,0 +1,301 @@
+\hypertarget{classgrenouilloland_1_1Jeu}{\section{Référence de la classe grenouilloland\-:\-:Jeu}
+\label{classgrenouilloland_1_1Jeu}\index{grenouilloland\-::\-Jeu@{grenouilloland\-::\-Jeu}}
+}
+
+
+\hyperlink{classgrenouilloland_1_1Jeu}{Jeu} du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu} Grenouilloland.  
+
+
+
+
+{\ttfamily \#include $<$Jeu.\-hh$>$}
+
+
+
+Graphe de collaboration de grenouilloland\-:\-:Jeu\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgrenouilloland_1_1Jeu__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgrenouilloland_1_1Jeu_1_1Mandataire}{Mandataire}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classgrenouilloland_1_1Jeu_1_1Mandataire}{Mandataire} du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgrenouilloland_1_1Jeu_aa17e547858c8e5d805c630dd52709599}{Jeu} (const int \&n)
+\item 
+const int \& \hyperlink{classgrenouilloland_1_1Jeu_ad0212b9c81ad43fa588275b5352e2f10}{lire\-Dimension} () const 
+\item 
+const unsigned int \& \hyperlink{classgrenouilloland_1_1Jeu_aaf16fe8116cec0e81936c4afbbaf9d9b}{lire\-Compteur} () const 
+\item 
+const \hyperlink{classgrenouilloland_1_1Case}{Case} \& \hyperlink{classgrenouilloland_1_1Jeu_a86292514d1a52166e63b54f09992ce93}{lire\-Case} (const int \&ligne, const int \&colonne) const 
+\item 
+const unsigned int \& \hyperlink{classgrenouilloland_1_1Jeu_ad3e1ac4ffca6a1f360de9d3dae2f02f6}{lire\-Pv\-Grenouille} () const 
+\item 
+bool \hyperlink{classgrenouilloland_1_1Jeu_a6317f289086e77fed2c4555c38fa86af}{grenouille\-Malade} () const 
+\item 
+bool \hyperlink{classgrenouilloland_1_1Jeu_a3a90f0bd8b1dd81ee311fd20b2c3df31}{presence\-Grenouille} (const unsigned int \&ligne, const unsigned int \&colonne) const 
+\item 
+bool \hyperlink{classgrenouilloland_1_1Jeu_aa95a6941d6b5fe55fe775824dfe7c1b7}{end} () const 
+\item 
+\hyperlink{classgrenouilloland_1_1Element}{Element} $\ast$ \hyperlink{classgrenouilloland_1_1Jeu_a0bee5ac205c6fa11f71e237f2d1b8a02}{nenuphar\-Aleatoire} () const 
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgrenouilloland_1_1Jeu_ab07fc3cd7186b844201d3e7639dcdf37}{reinitialiser} ()
+\item 
+void \hyperlink{classgrenouilloland_1_1Jeu_a98de76a91961f5c12bb1df678484dafa}{lancer\-Partie} ()
+\item 
+bool \hyperlink{classgrenouilloland_1_1Jeu_aec511079bde27f924e47db40239bf2f4}{deplacer\-Grenouille} (const int \&x, const int \&y)
+\item 
+void \hyperlink{classgrenouilloland_1_1Jeu_aed1eb1f7ece1d95617d168f84827dacd}{creer\-Chemin} ()
+\item 
+bool \hyperlink{classgrenouilloland_1_1Jeu_ae64660044f52c37b9283ed9538cc02df}{verif\-Etat} ()
+\item 
+bool \hyperlink{classgrenouilloland_1_1Jeu_a4052316bd896fdf6dbec94e03a3ad7aa}{vieillissement} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgrenouilloland_1_1Grenouille}{Grenouille} \hyperlink{classgrenouilloland_1_1Jeu_a411e399b5c5e63bc2c8890dbd0f0a21a}{\-\_\-grenouille}
+\item 
+std\-::vector$<$ \hyperlink{classgrenouilloland_1_1Case}{Case} $>$ \hyperlink{classgrenouilloland_1_1Jeu_a868edb9c732e86197a14cef627852648}{\-\_\-plateau}
+\item 
+int \hyperlink{classgrenouilloland_1_1Jeu_ab30a76105853c15cc67ef86d20dec98f}{\-\_\-n}
+\item 
+bool \hyperlink{classgrenouilloland_1_1Jeu_a2b1ca540559752ed171103258be5a58e}{\-\_\-end}
+\item 
+unsigned int \hyperlink{classgrenouilloland_1_1Jeu_acffeba39357d08306c91064a766b6e7d}{\-\_\-compteur}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+\hyperlink{classgrenouilloland_1_1Jeu}{Jeu} du \hyperlink{classgrenouilloland_1_1Jeu}{Jeu} Grenouilloland. 
+
+\begin{DoxyAuthor}{Auteur}
+Beudin.\-Alexandre Dauxais.\-Yann 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+05.\-01.\-2012
+\end{DoxyDate}
+Declaration de la classe \hyperlink{classgrenouilloland_1_1Jeu}{Jeu} réprésentant le plateau du jeu Grenouilloland. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{classgrenouilloland_1_1Jeu_aa17e547858c8e5d805c630dd52709599}{\index{grenouilloland\-::\-Jeu@{grenouilloland\-::\-Jeu}!Jeu@{Jeu}}
+\index{Jeu@{Jeu}!grenouilloland::Jeu@{grenouilloland\-::\-Jeu}}
+\subsubsection[{Jeu}]{\setlength{\rightskip}{0pt plus 5cm}Jeu\-::\-Jeu (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{n}
+\end{DoxyParamCaption}
+)}}\label{classgrenouilloland_1_1Jeu_aa17e547858c8e5d805c630dd52709599}
+Constructeur logique du jeu.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em n} & -\/ taille du plateau de dimension n$\ast$n. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classgrenouilloland_1_1Jeu_aed1eb1f7ece1d95617d168f84827dacd}{\index{grenouilloland\-::\-Jeu@{grenouilloland\-::\-Jeu}!creer\-Chemin@{creer\-Chemin}}
+\index{creer\-Chemin@{creer\-Chemin}!grenouilloland::Jeu@{grenouilloland\-::\-Jeu}}
+\subsubsection[{creer\-Chemin}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::creer\-Chemin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Jeu_aed1eb1f7ece1d95617d168f84827dacd}
+Création de chemins entre la grenouille et la case d'arrivée. \hypertarget{classgrenouilloland_1_1Jeu_aec511079bde27f924e47db40239bf2f4}{\index{grenouilloland\-::\-Jeu@{grenouilloland\-::\-Jeu}!deplacer\-Grenouille@{deplacer\-Grenouille}}
+\index{deplacer\-Grenouille@{deplacer\-Grenouille}!grenouilloland::Jeu@{grenouilloland\-::\-Jeu}}
+\subsubsection[{deplacer\-Grenouille}]{\setlength{\rightskip}{0pt plus 5cm}bool Jeu\-::deplacer\-Grenouille (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{x, }
+\item[{const int \&}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Jeu_aec511079bde27f924e47db40239bf2f4}
+Déplacement de la grenouille.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em x} & -\/ position de la grenouille sur l'axe x. \\
+\hline
+\mbox{\tt in}  & {\em y} & -\/ position de la grenouille sur l'axe y.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+true si le déplacement a été effectué, false sinon. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Jeu_aa95a6941d6b5fe55fe775824dfe7c1b7}{\index{grenouilloland\-::\-Jeu@{grenouilloland\-::\-Jeu}!end@{end}}
+\index{end@{end}!grenouilloland::Jeu@{grenouilloland\-::\-Jeu}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}bool Jeu\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1Jeu_aa95a6941d6b5fe55fe775824dfe7c1b7}
+Accesseur de l'état de fin du jeu.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de \hyperlink{classgrenouilloland_1_1Jeu_a2b1ca540559752ed171103258be5a58e}{\-\_\-end}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Jeu_a6317f289086e77fed2c4555c38fa86af}{\index{grenouilloland\-::\-Jeu@{grenouilloland\-::\-Jeu}!grenouille\-Malade@{grenouille\-Malade}}
+\index{grenouille\-Malade@{grenouille\-Malade}!grenouilloland::Jeu@{grenouilloland\-::\-Jeu}}
+\subsubsection[{grenouille\-Malade}]{\setlength{\rightskip}{0pt plus 5cm}bool Jeu\-::grenouille\-Malade (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1Jeu_a6317f289086e77fed2c4555c38fa86af}
+Accesseur de l'état de santé de la grenouille.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de l'état de santé de la grenouille. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Jeu_a98de76a91961f5c12bb1df678484dafa}{\index{grenouilloland\-::\-Jeu@{grenouilloland\-::\-Jeu}!lancer\-Partie@{lancer\-Partie}}
+\index{lancer\-Partie@{lancer\-Partie}!grenouilloland::Jeu@{grenouilloland\-::\-Jeu}}
+\subsubsection[{lancer\-Partie}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::lancer\-Partie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Jeu_a98de76a91961f5c12bb1df678484dafa}
+Lancement de la partie. \hypertarget{classgrenouilloland_1_1Jeu_a86292514d1a52166e63b54f09992ce93}{\index{grenouilloland\-::\-Jeu@{grenouilloland\-::\-Jeu}!lire\-Case@{lire\-Case}}
+\index{lire\-Case@{lire\-Case}!grenouilloland::Jeu@{grenouilloland\-::\-Jeu}}
+\subsubsection[{lire\-Case}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Case} \& Jeu\-::lire\-Case (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{ligne, }
+\item[{const int \&}]{colonne}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1Jeu_a86292514d1a52166e63b54f09992ce93}
+Accesseur d'une case du plateau.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em ligne} & -\/ ligne de la case du plateau. \\
+\hline
+\mbox{\tt in}  & {\em colonne} & -\/ colonne de la case du plateau.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+référence constante sur une case du plateau. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Jeu_aaf16fe8116cec0e81936c4afbbaf9d9b}{\index{grenouilloland\-::\-Jeu@{grenouilloland\-::\-Jeu}!lire\-Compteur@{lire\-Compteur}}
+\index{lire\-Compteur@{lire\-Compteur}!grenouilloland::Jeu@{grenouilloland\-::\-Jeu}}
+\subsubsection[{lire\-Compteur}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned int \& Jeu\-::lire\-Compteur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1Jeu_aaf16fe8116cec0e81936c4afbbaf9d9b}
+Accesseur du compteur.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de \hyperlink{classgrenouilloland_1_1Jeu_acffeba39357d08306c91064a766b6e7d}{\-\_\-compteur}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Jeu_ad0212b9c81ad43fa588275b5352e2f10}{\index{grenouilloland\-::\-Jeu@{grenouilloland\-::\-Jeu}!lire\-Dimension@{lire\-Dimension}}
+\index{lire\-Dimension@{lire\-Dimension}!grenouilloland::Jeu@{grenouilloland\-::\-Jeu}}
+\subsubsection[{lire\-Dimension}]{\setlength{\rightskip}{0pt plus 5cm}const int \& Jeu\-::lire\-Dimension (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1Jeu_ad0212b9c81ad43fa588275b5352e2f10}
+Accesseur de la dimension du plateau.
+
+\begin{DoxyReturn}{Renvoie}
+la valeur de \hyperlink{classgrenouilloland_1_1Jeu_ab30a76105853c15cc67ef86d20dec98f}{\-\_\-n}. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Jeu_ad3e1ac4ffca6a1f360de9d3dae2f02f6}{\index{grenouilloland\-::\-Jeu@{grenouilloland\-::\-Jeu}!lire\-Pv\-Grenouille@{lire\-Pv\-Grenouille}}
+\index{lire\-Pv\-Grenouille@{lire\-Pv\-Grenouille}!grenouilloland::Jeu@{grenouilloland\-::\-Jeu}}
+\subsubsection[{lire\-Pv\-Grenouille}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned int \& Jeu\-::lire\-Pv\-Grenouille (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1Jeu_ad3e1ac4ffca6a1f360de9d3dae2f02f6}
+Accesseur du nombre de pv de la grenouille.
+
+\begin{DoxyReturn}{Renvoie}
+nombre de pv de la grenouille. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Jeu_a0bee5ac205c6fa11f71e237f2d1b8a02}{\index{grenouilloland\-::\-Jeu@{grenouilloland\-::\-Jeu}!nenuphar\-Aleatoire@{nenuphar\-Aleatoire}}
+\index{nenuphar\-Aleatoire@{nenuphar\-Aleatoire}!grenouilloland::Jeu@{grenouilloland\-::\-Jeu}}
+\subsubsection[{nenuphar\-Aleatoire}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Element} $\ast$ Jeu\-::nenuphar\-Aleatoire (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1Jeu_a0bee5ac205c6fa11f71e237f2d1b8a02}
+Calcul aléatoire d'un nénuphar.
+
+\begin{DoxyReturn}{Renvoie}
+un pointeur sur un type de nénuphar. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Jeu_a3a90f0bd8b1dd81ee311fd20b2c3df31}{\index{grenouilloland\-::\-Jeu@{grenouilloland\-::\-Jeu}!presence\-Grenouille@{presence\-Grenouille}}
+\index{presence\-Grenouille@{presence\-Grenouille}!grenouilloland::Jeu@{grenouilloland\-::\-Jeu}}
+\subsubsection[{presence\-Grenouille}]{\setlength{\rightskip}{0pt plus 5cm}bool Jeu\-::presence\-Grenouille (
+\begin{DoxyParamCaption}
+\item[{const unsigned int \&}]{ligne, }
+\item[{const unsigned int \&}]{colonne}
+\end{DoxyParamCaption}
+) const}}\label{classgrenouilloland_1_1Jeu_a3a90f0bd8b1dd81ee311fd20b2c3df31}
+Test de la présence de la grenouille sur une case du plateau.
+
+\begin{DoxyReturn}{Renvoie}
+true si la grenouille est présente sur la case. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Jeu_ab07fc3cd7186b844201d3e7639dcdf37}{\index{grenouilloland\-::\-Jeu@{grenouilloland\-::\-Jeu}!reinitialiser@{reinitialiser}}
+\index{reinitialiser@{reinitialiser}!grenouilloland::Jeu@{grenouilloland\-::\-Jeu}}
+\subsubsection[{reinitialiser}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::reinitialiser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Jeu_ab07fc3cd7186b844201d3e7639dcdf37}
+Réinitialisation du plateau de jeu. \hypertarget{classgrenouilloland_1_1Jeu_ae64660044f52c37b9283ed9538cc02df}{\index{grenouilloland\-::\-Jeu@{grenouilloland\-::\-Jeu}!verif\-Etat@{verif\-Etat}}
+\index{verif\-Etat@{verif\-Etat}!grenouilloland::Jeu@{grenouilloland\-::\-Jeu}}
+\subsubsection[{verif\-Etat}]{\setlength{\rightskip}{0pt plus 5cm}bool Jeu\-::verif\-Etat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Jeu_ae64660044f52c37b9283ed9538cc02df}
+Vérification de l'état de la grenouille.
+
+\begin{DoxyReturn}{Renvoie}
+true si la grenouille est en vie, false sinon. 
+\end{DoxyReturn}
+\hypertarget{classgrenouilloland_1_1Jeu_a4052316bd896fdf6dbec94e03a3ad7aa}{\index{grenouilloland\-::\-Jeu@{grenouilloland\-::\-Jeu}!vieillissement@{vieillissement}}
+\index{vieillissement@{vieillissement}!grenouilloland::Jeu@{grenouilloland\-::\-Jeu}}
+\subsubsection[{vieillissement}]{\setlength{\rightskip}{0pt plus 5cm}bool Jeu\-::vieillissement (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Jeu_a4052316bd896fdf6dbec94e03a3ad7aa}
+Calcul du vieillissement des éléments du plateau.
+
+\begin{DoxyReturn}{Renvoie}
+false si la partie est terminée, true sinon. 
+\end{DoxyReturn}
+
+
+\subsection{Documentation des données membres}
+\hypertarget{classgrenouilloland_1_1Jeu_acffeba39357d08306c91064a766b6e7d}{\index{grenouilloland\-::\-Jeu@{grenouilloland\-::\-Jeu}!\-\_\-compteur@{\-\_\-compteur}}
+\index{\-\_\-compteur@{\-\_\-compteur}!grenouilloland::Jeu@{grenouilloland\-::\-Jeu}}
+\subsubsection[{\-\_\-compteur}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int grenouilloland\-::\-Jeu\-::\-\_\-compteur\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Jeu_acffeba39357d08306c91064a766b6e7d}
+Compteur du jeu. \hypertarget{classgrenouilloland_1_1Jeu_a2b1ca540559752ed171103258be5a58e}{\index{grenouilloland\-::\-Jeu@{grenouilloland\-::\-Jeu}!\-\_\-end@{\-\_\-end}}
+\index{\-\_\-end@{\-\_\-end}!grenouilloland::Jeu@{grenouilloland\-::\-Jeu}}
+\subsubsection[{\-\_\-end}]{\setlength{\rightskip}{0pt plus 5cm}bool grenouilloland\-::\-Jeu\-::\-\_\-end\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Jeu_a2b1ca540559752ed171103258be5a58e}
+\hyperlink{classgrenouilloland_1_1Etat}{Etat} de la fin de partie. \hypertarget{classgrenouilloland_1_1Jeu_a411e399b5c5e63bc2c8890dbd0f0a21a}{\index{grenouilloland\-::\-Jeu@{grenouilloland\-::\-Jeu}!\-\_\-grenouille@{\-\_\-grenouille}}
+\index{\-\_\-grenouille@{\-\_\-grenouille}!grenouilloland::Jeu@{grenouilloland\-::\-Jeu}}
+\subsubsection[{\-\_\-grenouille}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Grenouille} grenouilloland\-::\-Jeu\-::\-\_\-grenouille\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Jeu_a411e399b5c5e63bc2c8890dbd0f0a21a}
+La grenouille appartenant au jeu. \hypertarget{classgrenouilloland_1_1Jeu_ab30a76105853c15cc67ef86d20dec98f}{\index{grenouilloland\-::\-Jeu@{grenouilloland\-::\-Jeu}!\-\_\-n@{\-\_\-n}}
+\index{\-\_\-n@{\-\_\-n}!grenouilloland::Jeu@{grenouilloland\-::\-Jeu}}
+\subsubsection[{\-\_\-n}]{\setlength{\rightskip}{0pt plus 5cm}int grenouilloland\-::\-Jeu\-::\-\_\-n\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Jeu_ab30a76105853c15cc67ef86d20dec98f}
+\hyperlink{classgrenouilloland_1_1Dimension}{Dimension} du plateau de jeu. \hypertarget{classgrenouilloland_1_1Jeu_a868edb9c732e86197a14cef627852648}{\index{grenouilloland\-::\-Jeu@{grenouilloland\-::\-Jeu}!\-\_\-plateau@{\-\_\-plateau}}
+\index{\-\_\-plateau@{\-\_\-plateau}!grenouilloland::Jeu@{grenouilloland\-::\-Jeu}}
+\subsubsection[{\-\_\-plateau}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Case}$>$ grenouilloland\-::\-Jeu\-::\-\_\-plateau\hspace{0.3cm}{\ttfamily [protected]}}}\label{classgrenouilloland_1_1Jeu_a868edb9c732e86197a14cef627852648}
+Ensemble des cases composant le plateau du jeu. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+src/modele/include/Jeu.\-hh\item 
+src/modele/Jeu.\-cpp\end{DoxyCompactItemize}

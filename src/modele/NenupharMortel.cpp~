@@ -1,0 +1,16 @@
+#include "NenupharMortel.hh"
+
+NenupharMortel::NenupharMortel() : ElementMortel(GestStrat<StrategieMort>::strategie)
+{
+}
+
+NenupharMortel::~NenupharMortel()
+{
+}
+
+const int&
+NenuphatMortel::lireId() const {
+	return _ID;
+}
+
+const int NenupharMortel::_ID(4);
